@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Владимир Дранников](https://up.htmlacademy.ru/htmlcss/21/user/382731).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
