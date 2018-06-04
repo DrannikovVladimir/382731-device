@@ -2,11 +2,217 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Device</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+      <nav class="main-header-nav">
+        <a class="main-header-logo">
+          <p>device</p>
+        </a>
+        <ul class="user-nav">
+          <li class="find">Поиск по сайту</li>
+          <li class="login">Войти</li>
+          <li class="compare">Сравнить</li>
+          <li class="cart">Корзина</li>
+        </ul>
+        <ul class="site-nav">
+          <li><a href="catalog.html">Каталог таваров</a>
+            <ul class="products-nav">
+              <li><a href="catalog.html">Виртауальная реальность</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
+              <li><a href="catalog.html">Экшн-камеры</a></li>
+              <li><a href="catalog.html">Фитнес-браслеты</a></li>
+              <li><a href="catalog.html">Умные часы</a></li>
+              <li><a href="catalog.html">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
+      <section class="best-products">
+        <h2 class="visually-hidden">Лучшие товары</h2>
+        <ul class="slider-products">
+          <li class="slider-item">
+            <img src="http://placehold.it/150x100" alt="Палка для селфи">
+            <p><b>Делай селфи,<br>как Бен Стиллер!</b></p>
+            <p>Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a class="button" href="catalog.html">Подробнее</a>
+            <table>
+              <tr>
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr>
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
+              </tr>
+            </table>
+          </li>
+          <li class="slider-item">
+            <img src="http://placehold.it/150x100" alt="Фитнес-браслеты">
+            <p><b>Худеем<br>правильно!</b></p>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="button" href="">Подробнее</a>
+            <table>
+              <tr>
+                <td>48 часов</td>
+              </tr>
+              <tr>
+                <td>Без подзарядки</td>
+              </tr>
+            </table>
+          </li>
+          <li class="slider-item">
+            <img src="http://placehold.it/150x100" alt="Квадракортер">
+            <p><b>Порхает как бабочка,<br>жалит как пчела!</b></p>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="button" href="">Подробнее</a>
+            <table>
+              <tr>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr>
+                <td>Дальность полёта</td>
+                <td>Радиус поражения</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog">
+        <h2>Каталог товаров</h2>
+        <ul class="catalog-product">
+          <li class="product-item"><a href="">
+              <img src="http://placehold.it/150x100" alt="Виртауальная реальность">
+              <h3>Виртауальная реальность</h3>
+            </a></li>
+          <li class="product-item"><a href="">
+              <img src="http://placehold.it/150x100" alt="Моноподы для селфи">
+              <h3>Моноподы для селфи</h3>
+            </a></li>
+          <li class="product-item"><a href="">
+              <img src="http://placehold.it/150x100" alt="Экшн-камеры">
+              <h3>Экшен-камеры</h3>
+            </a></li>
+          <li class="product-item"><a href="">
+              <img src="http://placehold.it/150x100" alt="Финтнес-браслеты">
+              <h3>Фитнес-браслеты</h3>
+            </a></li>
+          <li class="product-item"><a href="">
+              <img src="http://placehold.it/150x100" alt="Умные часы">
+              <h3>Умные часы</h3>
+            </a></li>
+          <li class="product-item"><a href="">
+              <img src="http://placehold.it/150x100" alt="Квадрокоптеры">
+              <h3>Квадрокоптеры</h3>
+            </a></li>
+        </ul>
+      </section>
+      <section class="services">
+        <h2 class="visually-hidden">Сервисы</h2>
+        <ul class="slider-services">
+          <li class="slider-item">
+            <span class="button">Доставка</span>
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li class="slider-item">
+            <span class="button">Гарантия</span>
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
+          </li>
+          <li class="slider-item">
+            <span class="button">Кредит</span>
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="partners">
+        <h2 class="visually-hidden">Партнёры</h2>
+        <ul class="partners-list">
+          <li class="partners-item"><img src="http://placehold.it/150x100" alt="dji"></li>
+          <li class="partners-item"><img src="http://placehold.it/150x100" alt="spGadgets"></li>
+          <li class="partners-item"><img src="http://placehold.it/150x100" alt="GoPro"></li>
+          <li class="partners-item"><img src="http://placehold.it/150x100" alt="vive"></li>
+        </ul>
+      </section>
+      <section class="company">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="transport-list">
+          <li class="transport-item"><b>Деловые линии</b></li>
+          <li class="transport-item"><b>Автотрейдинг</b></li>
+          <li class="transport-item"><b>ЖелДорЭкспедиция</b></li>
+        </ul>
+        <a class="button" href=""
+        >Подробнее о нас</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <a href="http://maps.google.com"><img src="http://placehold.it/150x100" alt="Интерактивная карта"></a>
+        <span class="button">Напишите нам</span>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="logo-nav">
+        <a class="main-footer-logo" href="http://placehold.it/150x100">
+          <p>device</p></a>
+        <nav class="main-footer-nav">
+          <ul class="user-nav">
+            <li>Войти</li>
+            <li>Сравнить</li>
+            <li>Корзина</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="contact-nav">
+        <p class="address">г. Москва, ул. Строителей, 15</p>
+        <nav class="main-footer-nav">
+          <ul class="site-nav">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <p class="phone">Тел.: +7(495)495-95-95</p>
+      </div>
+      <div class="social-copy">
+        <ul class="footer-social">
+          <li><a href="">Фейсбук</a></li>
+          <li><a href="">Инстаграм</a></li>
+          <li><a href="">Твиттер</a></li>
+        </ul>
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
+      </div>
+    </footer>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Интерактивная карта</h2>
+      <span class="modal-close">x</span>
+      <!-- Здесь будет карта -->
+    </section>
+
+    <section class="modal modal-contact">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <span class="button">x</span>
+      <!-- Здесь будет форма -->
+    </section>
+
 
   </body>
 </html>
