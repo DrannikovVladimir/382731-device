@@ -7,30 +7,53 @@
   <body>
 
     <header class="main-header">
+      <a class="main-header-logo" href="index.html">
+        <p>device</p>
+      </a>
+      <ul class="user-nav">
+          <a class="user-logout" href="#">Войти</a>
+        </li>
+        <li class="user-nav-item">
+          <a class="user-compare" href="#">Сравнить</a>
+        </li>
+        <li class="user-nav-item">
+          <a class="user-cart" href="#">Корзина</a>
+        </li>
+      </ul>
       <nav class="main-header-nav">
-        <a class="main-header-logo">
-          <p>device</p>
-        </a>
-        <ul class="user-nav">
-          <li class="find">Поиск по сайту</li>
-          <li class="login">Войти</li>
-          <li class="compare">Сравнить</li>
-          <li class="cart">Корзина</li>
-        </ul>
         <ul class="site-nav">
-          <li><a href="catalog.html">Каталог таваров</a>
-            <ul class="products-nav">
-              <li><a href="catalog.html">Виртауальная реальность</a></li>
-              <li><a href="catalog.html">Моноподы для селфи</a></li>
-              <li><a href="catalog.html">Экшн-камеры</a></li>
-              <li><a href="catalog.html">Фитнес-браслеты</a></li>
-              <li><a href="catalog.html">Умные часы</a></li>
-              <li><a href="catalog.html">Квадрокоптеры</a></li>
+          <li class="site-nav-item">
+            <a href="catalog.html">Каталог таваров</a>
+            <ul class="product-nav">
+              <li class="product-nav-item">
+                <a href="catalog.html">Виртауальная реальность</a>
+              </li>
+              <li class="product-nav-item">
+                <a href="catalog.html">Моноподы для селфи</a>
+              </li>
+              <li class="product-nav-item">
+                <a href="catalog.html">Экшн-камеры</a>
+              </li>
+              <li class="product-nav-item">
+                <a href="catalog.html">Фитнес-браслеты</a>
+              </li>
+              <li class="product-nav-item">
+                <a href="catalog.html">Умные часы</a>
+              </li>
+              <li class="product-nav-item">
+                <a href="catalog.html">Квадрокоптеры</a>
+              </li>
             </ul>
           </li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="site-nav-item">
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="warranty.html">Гарантия</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="contacts.html">Контакты</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -142,10 +165,26 @@
       <section class="partners">
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="partners-list">
-          <li class="partners-item"><img src="http://placehold.it/150x100" alt="dji"></li>
-          <li class="partners-item"><img src="http://placehold.it/150x100" alt="spGadgets"></li>
-          <li class="partners-item"><img src="http://placehold.it/150x100" alt="GoPro"></li>
-          <li class="partners-item"><img src="http://placehold.it/150x100" alt="vive"></li>
+          <li class="partners-item">
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="dji">
+            </a>
+          </li>
+          <li class="partners-item">
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="spGadgets">
+            </a>
+          </li>
+          <li class="partners-item">
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="GoPro">
+            </a>
+          </li>
+          <li class="partners-item">
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="vive">
+            </a>
+          </li>
         </ul>
       </section>
       <section class="company">
@@ -153,49 +192,64 @@
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="transport-list">
-          <li class="transport-item"><b>Деловые линии</b></li>
-          <li class="transport-item"><b>Автотрейдинг</b></li>
-          <li class="transport-item"><b>ЖелДорЭкспедиция</b></li>
+          <li class="transport-list-item">Деловые линии</li>
+          <li class="transport-list-item">Автотрейдинг</li>
+          <li class="transport-list-item">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="button" href=""
-        >Подробнее о нас</a>
+        <a class="button" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a href="http://maps.google.com"><img src="http://placehold.it/150x100" alt="Интерактивная карта"></a>
-        <span class="button">Напишите нам</span>
+        <a class="button" href="#">Напишите нам</a>
       </section>
     </main>
 
     <footer class="main-footer">
       <div class="logo-nav">
         <a class="main-footer-logo" href="http://placehold.it/150x100">
-          <p>device</p></a>
-        <nav class="main-footer-nav">
-          <ul class="user-nav">
-            <li>Войти</li>
-            <li>Сравнить</li>
-            <li>Корзина</li>
-          </ul>
-        </nav>
+          <p>device</p>
+        </a>
+        <ul class="user-nav">
+            <a class="user-logout" href="#">Войти</a>
+          </li>
+          <li class="user-nav-item">
+            <a class="user-compare" href="#">Сравнить</a>
+          </li>
+          <li class="user-nav-item">
+            <a class="user-cart" href="#">Корзина</a>
+          </li>
+        </ul>
       </div>
       <div class="contact-nav">
         <p class="address">г. Москва, ул. Строителей, 15</p>
         <nav class="main-footer-nav">
           <ul class="site-nav">
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="guarantee.html">Гарантия</a></li>
-            <li><a href="contact.html">Контакты</a></li>
+            <li class="site-nav-item">
+              <a href="delivery.html">Доставка</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="guarantee.html">Гарантия</a
+                ></li>
+            <li class="site-nav-item">
+              <a href="contact.html">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <p class="phone">Тел.: +7(495)495-95-95</p>
+        <a class="phone-link" href="#">Тел.: +7(495)495-95-9</a>
       </div>
       <div class="social-copy">
         <ul class="footer-social">
-          <li><a href="">Фейсбук</a></li>
-          <li><a href="">Инстаграм</a></li>
-          <li><a href="">Твиттер</a></li>
+          <li class="footer-sociat-item">
+            <a href="">Фейсбук</a>
+          </li>
+          <li class="footer-sociat-item">
+            <a href="">Инстаграм</a>
+          </li>
+          <li class="footer-sociat-item">
+            <a href="">Твиттер</a>
+          </li>
         </ul>
         <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
       </div>
