@@ -129,7 +129,7 @@
               <a href="#">Любительская селфи-палка</a>
             </h3>
             <span>500 руб.</span>
-            <span class="button">В корзину</span>
+            <button class="button button-cart" type="button">В корзину</button>
             <a href="catalog-item.html" class="button">Добавить к сравнению</a>
           </li>
           <li class="catalog-item">
@@ -138,7 +138,7 @@
               <a href="#">Профессиональная селфи-палка</a>
             </h3>
             <span>1500 руб.</span>
-            <span class="button">В корзину</span>
+            <button class="button button-cart" type="button">В корзину</button>
             <a class="button" href="catalog-item.html">Добавить к сравнению</a>
           </li>
           <li class="catalog-item">
@@ -147,7 +147,7 @@
               <a href="#">Непотопляемая селфи-палка</a>
             </h3>
             <span>2500 руб.</span>
-            <span class="button">В корзину</span>
+            <button class="button button-cart" type="button">В корзину</button>
             <a class="button" href="catalog-item.html">Добавить к сравнению</a>
           </li>
           <li class="catalog-item">
@@ -156,13 +156,13 @@
               <a href="#">Селфи-палка "Следуй за мной"</a>
             </h3>
             <span>4900 руб.</span>
-            <span class="button">В корзину</span>
+            <button class="button button-cart" type="button">В корзину</button>
             <a class="button" href="catalog-item.html">Добавить к сравнению</a>
           </li>
         </ul>
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a class="button" href="#">Назад</a>
+            <a class="button pagination-button" href="#">Назад</a>
           </li>
           <li class="pagination-item pagination-item-current">
             <a href="#">1</a>
@@ -174,7 +174,7 @@
             <a href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="button" href="#">Вперёд</a>
+            <a class="button pagination-button" href="#">Вперёд</a>
           </li>
         </ul>
       </section>
@@ -236,14 +236,30 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Интерактивная карта</h2>
-      <span class="modal-close">x</span>
-      <!-- Здесь будет карта -->
+      <p>
+        <img src="img/map-big.jpg" width="960" height="559" alt="г. Москва, ул. Строителей, 15">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
     <section class="modal modal-contact">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <span class="button">x</span>
-      <!-- Здесь будет форма -->
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contact-item">
+          <label for="contact-name">Ваше имя:</label>
+          <input type="text" name="name" id="contact-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-item">
+          <label for="contact-email">Ваш email:</label>
+          <input type="email" name="email" id="contact-email" placeholder="email@example.com">
+        </p>
+        <p class="contact-item">
+          <label for="contact-message">Текст письма</label>
+          <input type="textarea" name="message" id="contact-message" placeholder="В свободной форме">
+        </p>
+        <button class="button-contact" type="submit">Отправить</button>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form>
     </section>
 
   </body>
