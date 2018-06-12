@@ -114,6 +114,18 @@
             </table>
           </li>
         </ul>
+        <ul class="slides-switches">
+          <li class="slide-radio">
+            <button class="slide-button" type="button">Первый слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-button" type="button">Второй слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-button" type="button">Третий слайд</button>
+          </li>
+        </ul>
+
       </section>
 
       <section class="popular">
@@ -162,13 +174,13 @@
         <h2 class="visually-hidden">Сервисы</h2>
         <ul class="service-list">
           <li class="service-item">
-            <a class="button" href="#">Доставка</a>
+            <button class="button service-button" type="button">Доставка</button>
           </li>
           <li class="service-item">
-            <a class="button" href="#">Гарантия</a>
+            <button class="button service-button" type="button">Гарантия</button>
           </li>
           <li class="service-item">
-            <a class="button" href="#">Кредит</a>
+            <button class="button service-button" type="button">Кредит</button>
           </li>
         </ul>
         <div class="services-delivery">
@@ -185,25 +197,25 @@
         </div>
       </section>
 
-      <section class="partners">
+      <section class="brands">
         <h2 class="visually-hidden">Партнёры</h2>
-        <ul class="partners-list">
-          <li class="partners-item">
+        <ul class="brands-list">
+          <li class="brands-item">
             <a class="button" href="#">
               <img src="img/partners/dji.jpg" width="127" height="73" alt="dji">
             </a>
           </li>
-          <li class="partners-item">
+          <li class="brands-item">
             <a class="button" href="#">
               <img src="img/partners/spgadget.jpg" width="250" height="41" alt="spGadgets">
             </a>
           </li>
-          <li class="partners-item">
+          <li class="brands-item">
             <a class="button" href="#">
               <img src="img/partners/gopro.jpg" width="182" height="51" alt="GoPro">
             </a>
           </li>
-          <li class="partners-item">
+          <li class="brands-item">
             <a class="button" href="#">
               <img src="img/partners/vive.jpg" width="202" height="60" alt="vive">
             </a>
@@ -269,13 +281,13 @@
       <div class="main-footer-bottom">
         <ul class="footer-social">
           <li class="footer-sociat-item">
-            <a href="">Фейсбук</a>
+            <a class="social-button-facebook" href="#">Фейсбук</a>
           </li>
           <li class="footer-sociat-item">
-            <a href="">Инстаграм</a>
+            <a class="social-button-instagram" href="#">Инстаграм</a>
           </li>
           <li class="footer-sociat-item">
-            <a href="">Твиттер</a>
+            <a class="social-button-twitter" href="#">Твиттер</a>
           </li>
         </ul>
         <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -297,17 +309,17 @@
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="contact-item">
           <label for="contact-name">Ваше имя:</label>
-          <input type="text" name="name" id="contact-name" placeholder="Имя Фамилия">
+          <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="contact-item">
           <label for="contact-email">Ваш email:</label>
-          <input type="email" name="email" id="contact-email" placeholder="email@example.com">
+          <input id="contact-email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p class="contact-item">
           <label for="contact-message">Текст письма</label>
-          <input type="textarea" name="message" id="contact-message" placeholder="В свободной форме">
+          <input id="contact-message" type="textarea" name="message" placeholder="В свободной форме">
         </p>
-        <button class="button-contact" type="submit">Отправить</button>
+        <button class="button button-contact" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>

@@ -77,29 +77,29 @@
       </ul>
 
       <section class="filters">
-        <h2 class="visually-hidden">Фильр товаров</h2>
-        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+        <h2>Фильр</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Цвет</legend>
             <ul>
               <li class="filter-option">
-                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="black" id="filter-black" checked>
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-black" type="checkbox" name="black" value="black" checked>
                 <label for="filter-black">Черный</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="white" id="filter-white">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-white" type="checkbox" name="white" value="white">
                 <label for="filter-white">Белый</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="blue" id="filter-blue" checked>
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-blue" type="checkbox" name="blue" value="blue" checked>
                 <label for="filter-blue">Синий</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="red" id="filter-red" checked>
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-red" type="checkbox" name="red" value="red" checked>
                 <label for="filter-red">Красный</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="pink" id="filter-pink">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-pink" type="checkbox" name="pink" value="pink">
                 <label for="filter-pink">Розовый</label>
               </li>
             </ul>
@@ -108,11 +108,11 @@
             <legend>Bluetooth</legend>
             <ul>
               <li class="filter-option">
-                <input type="radio" class="visually-hidden filter-input filter-input-radio" name="radio-value" id="filter-yes">
+                <input class="visually-hidden filter-input filter-input-radio" id="filter-yes" type="radio" name="radio-value" value="yes" checked>
                 <label for="filter-yes">Есть</label>
               </li>
               <li class="filter-option">
-                <input type="radio" class="visually-hidden filter-input filter-input-radio" name="radio-value" id="filter-no">
+                <input class="visually-hidden filter-input filter-input-radio" id="filter-no" type="radio" name="radio-value" value="no">
                 <label for="filter-no">Нет</label>
               </li>
             </ul>
@@ -122,6 +122,28 @@
       </section>
 
       <section class="catalog">
+        <div class="catalog-sort">
+          <h2>Сортировка</h2>
+          <ul class="sort-list">
+            <li class="sort-item">
+              <a class="sort-link" href="#">По цене</a>
+            </li>
+            <li class="sort-item">
+              <a class="sort-link" href="#">По типу</a>
+            </li>
+            <li class="sort-item">
+              <a class="sort-link" href="#">По популярности</a>
+            </li>
+          </ul>
+          <ul class="sort-list">
+            <li class="sort-item">
+              <a class="sort-link" href="#">От меньшего к большему</a>
+            </li>
+            <li class="sort-item">
+              <a class="sort-link" href="#">От большего к меньшему</a>
+            </li>
+          </ul>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <img src="img/catalog/amateur-monopod.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -219,13 +241,13 @@
       <div class="main-footer-bottom">
         <ul class="footer-social">
           <li class="footer-sociat-item">
-            <a href="">Фейсбук</a>
+            <a class="social-button-facebook" href="">Фейсбук</a>
           </li>
           <li class="footer-sociat-item">
-            <a href="">Инстаграм</a>
+            <a class="social-button-instagram" href="">Инстаграм</a>
           </li>
           <li class="footer-sociat-item">
-            <a href="">Твиттер</a>
+            <a class="social-button-twitter" href="">Твиттер</a>
           </li>
         </ul>
       </div>
