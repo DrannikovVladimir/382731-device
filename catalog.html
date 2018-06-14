@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
 
     <header class="main-header">
       <a class="main-header-logo" href="index.html">
@@ -82,11 +82,11 @@
       </ul>
 
       <section class="filters">
-        <h2>Фильр</h2>
+        <h2>Фильтр:</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Цвет</legend>
-            <ul>
+            <ul class="filter-list filter-list-checkbox">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" id="filter-black" type="checkbox" name="black" value="black" checked>
                 <label for="filter-black">Черный</label>
@@ -111,7 +111,7 @@
           </fieldset>
           <fieldset>
             <legend>Bluetooth</legend>
-            <ul>
+            <ul class="filter-list filter-list-radio">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" id="filter-yes" type="radio" name="radio-value" value="yes" checked>
                 <label for="filter-yes">Есть</label>
@@ -128,7 +128,7 @@
 
       <section class="catalog">
         <div class="catalog-sort">
-          <h2>Сортировка</h2>
+          <h2>Сортировка:</h2>
           <ul class="sort-list">
             <li class="sort-item">
               <a class="sort-link" href="#">По цене</a>
@@ -157,7 +157,7 @@
             </h3>
             <span>500 руб.</span>
             <button class="button button-cart" type="button">В корзину</button>
-            <a href="catalog-item.html">Добавить к сравнению</a>
+            <a class="button-compare" href="catalog-item.html">Добавить к сравнению</a>
           </li>
           <li class="catalog-item">
             <img src="img/catalog/professional-monopod.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -166,7 +166,7 @@
             </h3>
             <span>1500 руб.</span>
             <button class="button button-cart" type="button">В корзину</button>
-            <a href="catalog-item.html">Добавить к сравнению</a>
+            <a class="button-compare" href="catalog-item.html">Добавить к сравнению</a>
           </li>
           <li class="catalog-item">
             <img src="img/catalog/swiming-monopod.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
@@ -175,7 +175,7 @@
             </h3>
             <span>2500 руб.</span>
             <button class="button button-cart" type="button">В корзину</button>
-            <a href="catalog-item.html">Добавить к сравнению</a>
+            <a class="button-compare" href="catalog-item.html">Добавить к сравнению</a>
           </li>
           <li class="catalog-item">
             <img src="img/catalog/followme-monopod.jpg" width="360" height="380" alt="Селфи-палка "Следуй за мной"">
@@ -184,12 +184,12 @@
             </h3>
             <span>4900 руб.</span>
             <button class="button button-cart" type="button">В корзину</button>
-            <a  href="catalog-item.html">Добавить к сравнению</a>
+            <a class="button-compare"  href="catalog-item.html">Добавить к сравнению</a>
           </li>
         </ul>
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a class="button pagination-button" href="#">Назад</a>
+            <a class="pagination-button" href="#">Назад</a>
           </li>
           <li class="pagination-item pagination-item-current">
             <a href="#">1</a>
@@ -201,7 +201,7 @@
             <a href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="button pagination-button" href="#">Вперёд</a>
+            <a class="pagination-button" href="#">Вперёд</a>
           </li>
         </ul>
       </section>
@@ -213,9 +213,9 @@
         <a class="main-footer-logo" href="#">
           <img src="img/logo-footer.png" width="163" height="36" alt="Логотип">
         </a>
-        <ul class="user-nav">
+        <ul class="user-nav-list footer-user-nav-list">
           <li class="user-nav-item">
-            <a class="user-profile" href="">Валентин Петухов</a>
+            <a class="user-profile" href="#">Валентин Петухов</a>
           </li>
           <li class="user-nav-item">
             <a class="user-logout" href="#">Выйти</a>
@@ -230,7 +230,7 @@
       </div>
       <div class="contact-nav">
         <p class="address">г. Москва, ул. Строителей, 15</p>
-        <ul class="site-nav">
+        <ul class="site-nav footer-site-nav">
           <li class="site-nav-item">
             <a href="delivery.html">Доставка</a>
           </li>
@@ -284,7 +284,7 @@
           <label for="contact-message">Текст письма</label>
           <input type="textarea" name="message" id="contact-message" placeholder="В свободной форме">
         </p>
-        <button class="button-contact" type="submit">Отправить</button>
+        <button class="button button-contact" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>

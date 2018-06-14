@@ -134,7 +134,7 @@
       </section>
 
       <section class="popular">
-        <h2>Каталог товаров</h2>
+        <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular-product">
           <li class="product-item">
             <a href="">
@@ -206,22 +206,22 @@
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="brands-list">
           <li class="brands-item">
-            <a class="button" href="#">
+            <a class="brand-link" href="#">
               <img src="img/partners/dji.jpg" width="127" height="73" alt="dji">
             </a>
           </li>
           <li class="brands-item">
-            <a class="button" href="#">
+            <a class="brand-link" href="#">
               <img src="img/partners/spgadget.jpg" width="250" height="41" alt="spGadgets">
             </a>
           </li>
           <li class="brands-item">
-            <a class="button" href="#">
+            <a class="brand-link" href="#">
               <img src="img/partners/gopro.jpg" width="182" height="51" alt="GoPro">
             </a>
           </li>
           <li class="brands-item">
-            <a class="button" href="#">
+            <a class="brand-link" href="#">
               <img src="img/partners/vive.jpg" width="202" height="60" alt="vive">
             </a>
           </li>
@@ -256,7 +256,7 @@
         <a class="main-footer-logo" href="#">
           <img src="img/logo-footer.png" width="163" height="36" alt="Логотип">
         </a>
-        <ul class="user-nav-list">
+        <ul class="user-nav-list footer-user-nav-list">
           <li class="user-nav-item">
             <a class="user-logout" href="#">Войти</a>
           </li>
@@ -270,7 +270,7 @@
       </div>
       <div class="contact-nav">
         <p class="address">г. Москва, ул. Строителей, 15</p>
-        <ul class="site-nav">
+        <ul class="site-nav footer-site-nav">
           <li class="site-nav-item">
             <a href="delivery.html">Доставка</a>
           </li>
@@ -313,15 +313,15 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="contact-item">
-          <label for="contact-name">Ваше имя:</label>
+          <label class="contact-label" for="contact-name">Ваше имя:</label>
           <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="contact-item">
-          <label for="contact-email">Ваш email:</label>
+          <labe class="contact-label"l for="contact-email">Ваш email:</label>
           <input id="contact-email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p class="contact-item">
-          <label for="contact-message">Текст письма</label>
+          <label class="contact-label" for="contact-message">Текст письма</label>
           <input id="contact-message" type="textarea" name="message" placeholder="В свободной форме">
         </p>
         <button class="button button-contact" type="submit">Отправить</button>
