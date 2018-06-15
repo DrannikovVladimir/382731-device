@@ -14,7 +14,10 @@
       </a>
       <ul class="user-nav-list">
         <li class="user-nav-item">
-          <a class="user-search" href="#">Поиск по сайту</a>
+          <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+            <input class="input-search" id="search" type="search" name="search" placeholder="Поиск по сайту">
+            <button class="button-search" type="submit">Найти</button>
+          </form>
         </li>
         <li class="user-nav-item">
           <a class="user-logout" href="#">Войти</a>
@@ -133,43 +136,43 @@
 
       </section>
 
-      <section class="popular">
-        <h2 class="visually-hidden">Популярные товары</h2>
-        <ul class="popular-product">
+      <section class="category">
+        <h2 class="visually-hidden">Категории товаров</h2>
+        <ul class="category-product">
           <li class="product-item">
             <a href="">
-              <img src="img/popular/popular-1.svg" width="97" height="55" alt="Виртауальная реальность">
-              <h3>Виртауальная реальность</h3>
+              <img src="img/category/1.svg" width="97" height="55" alt="Виртауальная реальность">
+              <h3 class="category-product-title">Виртауальная реальность</h3>
             </a>
           </li>
           <li class="product-item">
             <a href="">
-              <img src="img/popular/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-              <h3>Моноподы для селфи</h3>
+              <img src="img/category/2.svg" width="86" height="117" alt="Моноподы для селфи">
+              <h3 class="category-product-title">Моноподы для селфи</h3>
             </a>
           </li>
           <li class="product-item">
             <a href="">
-              <img src="img/popular/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
-              <h3>Экшен-камеры</h3>
+              <img src="img/category/3.svg" width="71" height="87" alt="Экшн-камеры">
+              <h3 class="category-product-title">Экшен-камеры</h3>
             </a>
           </li>
           <li class="product-item">
             <a href="">
-              <img src="img/popular/popular-4.svg" width="107" height="65" alt="Финтнес-браслеты">
-              <h3>Фитнес-браслеты</h3>
+              <img src="img/category/4.svg" width="107" height="65" alt="Финтнес-браслеты">
+              <h3 class="category-product-title">Фитнес-браслеты</h3>
+            </a>
+          </li>``
+          <li class="product-item">
+            <a href="">
+              <img src="img/category/5.svg" width="56" height="98" alt="Умные часы">
+              <h3 class="category-product-title">Умные часы</h3>
             </a>
           </li>
           <li class="product-item">
             <a href="">
-              <img src="img/popular/popular-5.svg" width="56" height="98" alt="Умные часы">
-              <h3>Умные часы</h3>
-            </a>
-          </li>
-          <li class="product-item">
-            <a href="">
-              <img src="img/popular/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
-              <h3>Квадрокоптеры</h3>
+              <img src="img/category/6.svg" width="132" height="69" alt="Квадрокоптеры">
+              <h3 class="category-product-title">Квадрокоптеры</h3>
             </a>
           </li>
         </ul>
@@ -314,15 +317,15 @@
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="contact-item">
           <label class="contact-label" for="contact-name">Ваше имя:</label>
-          <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="contact-input" id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="contact-item">
           <labe class="contact-label"l for="contact-email">Ваш email:</label>
-          <input id="contact-email" type="email" name="email" placeholder="email@example.com">
+          <input class="contact-input" id="contact-email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p class="contact-item">
           <label class="contact-label" for="contact-message">Текст письма</label>
-          <input id="contact-message" type="textarea" name="message" placeholder="В свободной форме">
+          <input class="contact-input" id="contact-message" type="textarea" name="message" placeholder="В свободной форме">
         </p>
         <button class="button button-contact" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>

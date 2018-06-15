@@ -14,7 +14,10 @@
       </a>
       <ul class="user-nav-list">
         <li class="user-nav-item">
-          <a class="user-search" href="#">Поиск по сайту</a>
+          <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+            <input class="input-search" id="search" type="search" name="search" placeholder="Поиск по сайту">
+            <button class="button-search" type="submit">Найти</button>
+          </form>
         </li>
         <li class="user-nav-item">
           <a class="user-profile" href="">Валентин Петухов</a>
@@ -68,7 +71,7 @@
     </header>
 
     <main class="container">
-      <h1>Моноподы для селфи</h1>
+      <h1 class="catalog-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a href="index.html">Главная</a>
@@ -274,15 +277,15 @@
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="contact-item">
           <label for="contact-name">Ваше имя:</label>
-          <input type="text" name="name" id="contact-name" placeholder="Имя Фамилия">
+          <input class="contact-input" type="text" name="name" id="contact-name" placeholder="Имя Фамилия">
         </p>
         <p class="contact-item">
           <label for="contact-email">Ваш email:</label>
-          <input type="email" name="email" id="contact-email" placeholder="email@example.com">
+          <input class="contact-input" type="email" name="email" id="contact-email" placeholder="email@example.com">
         </p>
         <p class="contact-item">
           <label for="contact-message">Текст письма</label>
-          <input type="textarea" name="message" id="contact-message" placeholder="В свободной форме">
+          <input class="contact-input" type="textarea" name="message" id="contact-message" placeholder="В свободной форме">
         </p>
         <button class="button button-contact" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>

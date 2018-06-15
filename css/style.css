@@ -71,7 +71,6 @@ a {
   font-weight: 800;
   letter-spacing: 0.2em;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
 
   background-color: transparent;
@@ -87,6 +86,60 @@ a {
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Стилизация формы поиска */
+.input-search {
+  background-color: transparent;
+  border: none;
+}
+
+.button-search {
+  display: none;
+
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.button-search:hover,
+.button-search:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.button-search:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-input-placeholder {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.010em;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.input-search:hover::-webkit-input-placeholder,
+.input-search:focus::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.input-search:active::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.input-search:hover,
+.input-search:focus {
+  border-bottom: 2px solid #000000;
+}
+
+.input-search:hover + .button-search,
+.input-search:focus + .button-search {
+  display: block;
 }
 
 
@@ -172,10 +225,8 @@ a.user-search:active {
 }
 
 .table-description tr:last-child {
-  font-family: "Open Sans", "Taahoma", sans-serif;
   font-size: 13px;
   line-height: 20px;
-  font-weight: 300;
   color: #000000;
 }
 
@@ -184,17 +235,17 @@ a.user-search:active {
 }
 
 /* Оформление секции популярные товары */
-.popular h3 {
+.category-product {
+  list-style: none;
+}
+
+.category-product-title {
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.010em;
   font-weight: 800;
   color: #000000;
-}
-
-.popular-product {
-  list-style: none;
 }
 
 .product-item a {
@@ -375,7 +426,7 @@ a.user-search:active {
 
 
 /* Оформление заголовка на внутренней странице */
-.inner-page h1 {
+.catalog-title {
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -403,7 +454,7 @@ a.user-search:active {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.breadcrumbs-current a{
+.breadcrumbs-current a {
   color: rgba(0, 0, 0, 1);
 }
 
@@ -466,7 +517,7 @@ a.user-search:active {
   text-transform: uppercase;
 }
 
-.catalog h3 {
+.catalog-list h3 {
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -575,9 +626,7 @@ a.user-search:active {
   letter-spacing: 0;
 }
 
-.contact-item input[type="text"],
-.contact-item input[type="email"],
-.contact-item input[type="textarea"] {
+.contact-item .contact-input {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0;
@@ -586,15 +635,11 @@ a.user-search:active {
   border: none;
 }
 
-.contact-item input[type="text"]:hover,
-.contact-item input[type="email"]:hover,
-.contact-item input[type="textarea"]:hover {
+.contact-item .contact-input:hover {
   background-color: rgba(229, 229, 229, 1);
 }
 
-.contact-item input[type="text"]:focus,
-.contact-item input[type="email"]:focus,
-.contact-item input[type="textarea"]:focus {
+.contact-item .contact-input:focus {
   background-color: rgba(255, 255, 255, 1);
   border: 3px solid #f0c52e;
 }
