@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Device</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/normalize.css rel="stylesheet"">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -15,8 +15,10 @@
       <ul class="user-nav-list">
         <li class="user-nav-item">
           <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-            <input class="input-search" id="search" type="search" name="search" placeholder="Поиск по сайту">
-            <button class="button-search" type="submit">Найти</button>
+            <div class="form-wraper">
+              <input class="input-search" id="search" type="search" name="search" placeholder="Поиск по сайту">
+              <button class="button-search" type="submit">Найти</button>
+            </div>
           </form>
         </li>
         <li class="user-nav-item">
@@ -74,52 +76,64 @@
         <h2 class="visually-hidden">Лучшие товары</h2>
         <ul class="slider-products">
           <li class="slider-item">
-            <img src="img/best/monopod.png" width="384" height="486" alt="Палка для селфи">
-            <p>Делай селфи,<br>как Бен Стиллер!</p>
-            <p>Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a class="button" href="catalog.html">Подробнее</a>
-            <table class="table-description">
-              <tr>
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-              <tr>
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
-              </tr>
-            </table>
+            <div class="wrapper-img">
+              <img src="img/best/monopod.png" width="384" height="486" alt="Палка для селфи">
+            </div>
+            <div class="wrapper-text">
+              <p>Делай селфи,<br>как Бен Стиллер!</p>
+              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a class="button" href="catalog.html">Подробнее</a>
+              <table class="table-description">
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr>
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </div>
           </li>
           <li class="slider-item">
-            <img src="img/best/fitness-bracelet.png" width="345" height="485" alt="Фитнес-браслеты">
-            <p>Худеем<br>правильно!</p>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a class="button" href="">Подробнее</a>
-            <table class="table-description">
-              <tr>
-                <td>48 часов</td>
-              </tr>
-              <tr>
-                <td>Без подзарядки</td>
-              </tr>
-            </table>
+            <div class="wrapper-img">
+              <img src="img/best/fitness-bracelet.png" width="345" height="485" alt="Фитнес-браслеты">
+            </div>
+            <div class="wrapper-text">
+              <p>Худеем<br>правильно!</p>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="button" href="">Подробнее</a>
+              <table class="table-description">
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+                <tr>
+                  <td>Без подзарядки</td>
+                </tr>
+              </table>
+            </div>
           </li>
           <li class="slider-item">
-            <img src="img/best/quadrupter.png" width="526" height="334" alt="Квадракортер">
-            <p>Порхает как бабочка,<br>жалит как пчела!</p>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="button" href="">Подробнее</a>
-            <table class="table-description">
-              <tr>
-                <td>800 м</td>
-                <td>50 м</td>
-              </tr>
-              <tr>
-                <td>Дальность полёта</td>
-                <td>Радиус поражения</td>
-              </tr>
-            </table>
+            <div class="wrapper-img">
+              <img src="img/best/quadrupter.png" width="526" height="334" alt="Квадракортер">
+            </div>
+            <div class="wrapper-text">
+              <p>Порхает как бабочка,<br>жалит как пчела!</p>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="button" href="">Подробнее</a>
+              <table class="table-description">
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr>
+                  <td>Дальность полёта</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
+            </div>
           </li>
         </ul>
         <ul class="slides-switches">
@@ -141,37 +155,49 @@
         <ul class="category-product">
           <li class="product-item">
             <a href="">
-              <img src="img/category/1.svg" width="97" height="55" alt="Виртауальная реальность">
+              <div class="wrapper-img">
+                <img src="img/category/1.svg" width="97" height="55" alt="Виртауальная реальность">
+              </div>
               <h3 class="category-product-title">Виртауальная реальность</h3>
             </a>
           </li>
           <li class="product-item">
             <a href="">
-              <img src="img/category/2.svg" width="86" height="117" alt="Моноподы для селфи">
+              <div class="wrapper-img">
+                <img src="img/category/2.svg" width="86" height="117" alt="Моноподы для селфи">
+              </div>
               <h3 class="category-product-title">Моноподы для селфи</h3>
             </a>
           </li>
           <li class="product-item">
             <a href="">
-              <img src="img/category/3.svg" width="71" height="87" alt="Экшн-камеры">
+              <div class="wrapper-img">
+                <img src="img/category/3.svg" width="71" height="87" alt="Экшн-камеры">
+              </div>
               <h3 class="category-product-title">Экшен-камеры</h3>
             </a>
           </li>
           <li class="product-item">
             <a href="">
-              <img src="img/category/4.svg" width="107" height="65" alt="Финтнес-браслеты">
+              <div class="wrapper-img">
+                <img src="img/category/4.svg" width="107" height="65" alt="Финтнес-браслеты">
+              </div>
               <h3 class="category-product-title">Фитнес-браслеты</h3>
             </a>
-          </li>``
+          </li>
           <li class="product-item">
             <a href="">
-              <img src="img/category/5.svg" width="56" height="98" alt="Умные часы">
+              <div class="wrapper-img">
+                <img src="img/category/5.svg" width="56" height="98" alt="Умные часы">
+              </div>
               <h3 class="category-product-title">Умные часы</h3>
             </a>
           </li>
           <li class="product-item">
             <a href="">
-              <img src="img/category/6.svg" width="132" height="69" alt="Квадрокоптеры">
+              <div class="wrapper-img">
+                <img src="img/category/6.svg" width="132" height="69" alt="Квадрокоптеры">
+              </div>
               <h3 class="category-product-title">Квадрокоптеры</h3>
             </a>
           </li>
@@ -210,47 +236,49 @@
         <ul class="brands-list">
           <li class="brands-item">
             <a class="brand-link" href="#">
-              <img src="img/partners/dji.jpg" width="127" height="73" alt="dji">
+              <img src="img/brands/dji.jpg" width="127" height="73" alt="dji">
             </a>
           </li>
           <li class="brands-item">
             <a class="brand-link" href="#">
-              <img src="img/partners/spgadget.jpg" width="250" height="41" alt="spGadgets">
+              <img src="img/brands/spgadget.jpg" width="250" height="41" alt="spGadgets">
             </a>
           </li>
           <li class="brands-item">
             <a class="brand-link" href="#">
-              <img src="img/partners/gopro.jpg" width="182" height="51" alt="GoPro">
+              <img src="img/brands/gopro.jpg" width="182" height="51" alt="GoPro">
             </a>
           </li>
           <li class="brands-item">
             <a class="brand-link" href="#">
-              <img src="img/partners/vive.jpg" width="202" height="60" alt="vive">
+              <img src="img/brands/vive.jpg" width="202" height="60" alt="vive">
             </a>
           </li>
         </ul>
       </section>
 
-      <section class="company">
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="transport-list">
-          <li class="transport-list-item">Деловые линии</li>
-          <li class="transport-list-item">Автотрейдинг</li>
-          <li class="transport-list-item">ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button" href="#">Подробнее о нас</a>
-      </section>
+      <div class="wrapper-contacts">
+        <section class="company">
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="transport-list">
+            <li class="transport-list-item">Деловые линии</li>
+            <li class="transport-list-item">Автотрейдинг</li>
+            <li class="transport-list-item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="#">Подробнее о нас</a>
+        </section>
 
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="http://maps.google.com">
-          <img src="img/map.jpg" width="560" height="222" alt="Интерактивная карта">
-        </a>
-        <a class="button" href="#">Напишите нам</a>
-      </section>
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a href="http://maps.google.com">
+            <img src="img/map.jpg" width="560" height="222" alt="Интерактивная карта">
+          </a>
+          <a class="button" href="#">Напишите нам</a>
+        </section>
+      </div>
 
     </main>
 
