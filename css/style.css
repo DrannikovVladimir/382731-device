@@ -675,9 +675,13 @@ a.user-search:active {
 }
 
 /* Оформление контейнера на внутренней странице */
+.container-fluid {
+  background: linear-gradient(to right, #eeeeee 0, #eeeeee 33%, #ffffff 33%, #ffffff 100%);
+}
+
 .inner-page .container {
   width: 1100px;
-  padding-left: 60px;
+  padding-left: 80px;
 }
 /* Оформление заголовка на внутренней странице */
 .inner-page .main-header {
@@ -738,19 +742,27 @@ a.user-search:active {
 /* Оформление секции фильтры */
 
 .filters {
-  width: 328px;
+  width: 270px;
   margin-right: 72px;
 
   color: #000000;
+}
 
-  background-color: #eeeeee;
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin-bottom: 70px;
 }
 
 .filters-title {
-  margin: 28px 0;
+
 }
 
 .filters fieldset {
+  margin: 0;
+  padding: 0;
+
   border: none;
 }
 
@@ -764,7 +776,6 @@ a.user-search:active {
 
 .filters h2 {
   margin: 0;
-  margin-bottom: 70px;
 
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 16px;
@@ -775,6 +786,9 @@ a.user-search:active {
 }
 
 .filter-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
   line-height: 40px;
 }
@@ -790,6 +804,10 @@ a.user-search:active {
 
 .filter-input:disabled + label {
   color: #a6a6a6;
+}
+
+.filter-button {
+  width: 200px;
 }
 
 
@@ -813,6 +831,7 @@ a.user-search:active {
 .catalog-sort {
   display: flex;
   align-items: center;
+  height: 70px;
   margin-bottom: 70px;
 }
 
@@ -889,7 +908,24 @@ a.user-search:active {
 }
 
 .pagination-list {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pagination-item:nth-child(2) {
+  margin-left: auto;
+}
+
+.pagination-item:nth-child(4) {
+  margin-right: auto;
+}
+
+.pagination-item:nth-child(3) {
+  margin: 0 30px;
 }
 
 .pagination-list a {
