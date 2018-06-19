@@ -691,7 +691,7 @@ a.user-search:active {
 /* Оформление контейнера на внутренней странице */
 .container-fluid {
   position: relative;
-  background: linear-gradient(to right, #eeeeee 0, #eeeeee 33%, #ffffff 33%, #ffffff 100%);
+  background: linear-gradient(to right, #eeeeee 0, #eeeeee 33%, transparent 33%, transparent 100%);
 }
 
 .container-fluid::before {
@@ -703,6 +703,7 @@ a.user-search:active {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.08);
+  z-index: 0;
 }
 
 .inner-page .container {
@@ -854,6 +855,7 @@ a.user-search:active {
 /* Оформление секции каталога */
 .catalog {
   width: 760px;
+  z-index: 9999;
 }
 
 .catalog h2 {
