@@ -188,9 +188,6 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-/* * {
-  border: 1px solid red;
-} */
 
 /* Оформление шапки */
 .main-header {
@@ -240,6 +237,24 @@ input[type="radio"].visually-hidden {
 
 .main-header .user-nav-item:nth-child(3) {
   margin-right: 38px;
+}
+
+.main-header .user-profile {
+  padding-left: 27px;
+
+  background: url("../img/user.svg") left center no-repeat;
+}
+
+.main-header .user-compare {
+  padding-left: 23px;
+
+  background: url("../img/compare.svg") left center no-repeat;
+}
+
+.main-header .user-cart {
+  padding-left: 26px;
+
+  background: url("../img/cart.svg") left center no-repeat;
 }
 
 .user-nav-link,
@@ -632,31 +647,49 @@ a.user-search:active {
   list-style: none;
 }
 
-.brands-item {
+.brand-link {
+  display: block;
   width: 260px;
-
-  text-align: center;
+  height: 100px;
 }
 
-.brand-link img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
-
+.brands-item:nth-child(1) {
+  background: #ffffff url("../img/brands/logo1-black.png") center center no-repeat;
   opacity: 0.2;
 }
 
-.brand-link img:hover {
-  -webkit-filter: none;
-  -moz-filter: none;
-  -ms-filter: none;
-  -o-filter: none;
-  filter: none;
-  filter: none;
+.brands-item:nth-child(1):hover {
+  background: #ffffff url("../img/brands/logo1.png") center center no-repeat;
+  opacity: 1;
+}
 
+.brands-item:nth-child(2) {
+  background: #ffffff url("../img/brands/logo2-black.png") center center no-repeat;
+  opacity: 0.2;
+}
+
+.brands-item:nth-child(2):hover {
+  background: #ffffff url("../img/brands/logo2.png") center center no-repeat;
+  opacity: 1;
+}
+
+.brands-item:nth-child(3) {
+  background: #ffffff url("../img/brands/logo3-black.png") center center no-repeat;
+  opacity: 0.2;
+}
+
+.brands-item:nth-child(3):hover {
+  background: #ffffff url("../img/brands/logo3.png") center center no-repeat;
+  opacity: 1;
+}
+
+.brands-item:nth-child(4) {
+  background: #ffffff url("../img/brands/logo4-black.png") center center no-repeat;
+  opacity: 0.2;
+}
+
+.brands-item:nth-child(4):hover {
+  background: #ffffff url("../img/brands/logo4.png") center center no-repeat;
   opacity: 1;
 }
 
