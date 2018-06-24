@@ -638,6 +638,28 @@ a.user-search:active {
   text-align: center;
 }
 
+.brand-link img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+
+  opacity: 0.2;
+}
+
+.brand-link img:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none;
+
+  opacity: 1;
+}
+
 
 /* Обёртка для контактов и о компании */
 .wrapper-contacts {
