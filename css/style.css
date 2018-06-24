@@ -1240,8 +1240,7 @@ a.user-search:active {
   background-color: rgba(238, 238, 238, 0.7);
 }
 
-.card-product-img:hover + .catalog-item-hover {
-  cursor: pointer;
+.card-product-img:hover > .catalog-item-hover {
   display: flex;
 }
 
