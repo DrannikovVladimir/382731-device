@@ -1297,6 +1297,75 @@ a.user-search:active {
   background-color: #000000;
 }
 
+.range-controls {
+  position: relative;
+}
+
+.range-controls .scale {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 70px;
+
+  background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 110px;
+  height: 2px;
+
+  background-color: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: -10px;
+
+  width: 4px;
+  height: 4px;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #b4b4b4;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: -3px;
+}
+
+.range-controls .toggle-max {
+  left: 100px;
+}
+
+.range-controls .toggle-min::after {
+  content: "от 0";
+  position: absolute;
+  top: 12px;
+  left: -5px;
+
+  min-width: 60px;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  opacity: 0.2;
+}
+
+.range-controls .toggle-max::after {
+  content: "до 5000";
+  position: absolute;
+  top: 12px;
+  left: -25px;
+
+  min-width: 60px;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  opacity: 0.2;
+}
+
+
 .header-catalog h2 {
   margin: 0;
 
