@@ -384,6 +384,10 @@ a.user-search:active {
   margin-bottom: 100px;
 }
 
+.best-products .container {
+  position: relative;
+}
+
 .slider-products {
   margin: 0;
   padding: 0;
@@ -391,6 +395,8 @@ a.user-search:active {
 }
 
 .slider-item {
+  position: relative;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -399,6 +405,70 @@ a.user-search:active {
                                                rgba(240, 197, 46, 0.5) 110px,
                                                            transparent 110px,
                                                            transparent 100%);
+}
+
+.slider-item::before {
+  content: "";
+
+  position: absolute;
+  left: 600px;
+  top: 30px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #ffffff;
+}
+
+.slider-item:nth-child(1)::after {
+  content: "01";
+
+  position: absolute;
+  top: -15px;
+  right: 60px;
+
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  font-size: 180px;
+  line-height: 180px;
+  font-weight: 800;
+  letter-spacing: 0.010em;
+
+  color: #ffffff;
+
+}
+
+.slider-item:nth-child(2)::after {
+  content: "02";
+
+  position: absolute;
+  top: -15px;
+  right: 60px;
+
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  font-size: 180px;
+  line-height: 180px;
+  font-weight: 800;
+  letter-spacing: 0.010em;
+
+  color: #ffffff;
+
+}
+
+.slider-item:nth-child(3)::after {
+  content: "03";
+
+  position: absolute;
+  top: -15px;
+  right: 60px;
+
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  font-size: 180px;
+  line-height: 180px;
+  font-weight: 800;
+  letter-spacing: 0.010em;
+
+  color: #ffffff;
+
 }
 
 .wrapper-img {
@@ -462,10 +532,59 @@ a.user-search:active {
 }
 
 .slides-switches {
-  list-style: none;
+  position: absolute;
+  top: 320px;
+  right: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
+
+.slide-radio {
+  position: relative;
+
+  width: 16px;
+  height: 16px;
+  padding: 5px;
+}
+
+.slide-radio::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 10px;
+  height: 10px;
+
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.slide-radio-active::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 4px;
+  height: 4px;
+
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+
+
 
 /* Оформление секции категории товаров */
 .category {
