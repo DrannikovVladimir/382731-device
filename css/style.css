@@ -1392,21 +1392,76 @@ a.user-search:active {
   line-height: 40px;
 }
 
-.filter-input:hover + label,
-.filter-input:focus + label {
-
+.filter-option {
+  padding-left: 40px;
 }
 
-.filter-input:active + label {
+.filter-option label {
+  position: relative;
 
+  display: block;
+
+  cursor: pointer;
+}
+
+.filter-input + label::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -39px;
+  transform: translateY(-50%);
+
+  width: 23px;
+  height: 23px;
+
+  background: #eeeeee url("../img/checkbox-off.svg") center center no-repeat;
+}
+
+.filter-input:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+
+  width: 28px;
+  height: 23px;
+
+  background: #eeeeee url("../img/checkbox-on.svg") center center no-repeat;
+}
+
+.filter-input-radio + label::before {
+  left: -40px;
+
+  width: 25px;
+  height: 25px;
+
+  background: #eeeeee url("../img/radio-off.svg") center center no-repeat;
+}
+
+.filter-input-radio:checked + label::after {
+  width: 25px;
+  height: 25px;
+
+  background: #eeeeee url("../img/radio-on.svg") center center no-repeat;
+}
+
+.filter-input:hover + label::before,
+.filter-input:hover + label::after,
+.filter-input:focus + label::before,
+.filter-input:focus + label::after {
+  opacity: 0.6;
+}
+
+.filter-input:active + label::before,
+.filter-input:active + label::after {
+  opacity: 1;
 }
 
 .filter-input:disabled + label {
   color: #a6a6a6;
-}
-
-.filter-option {
-
 }
 
 .filter-list-checkbox {
