@@ -313,6 +313,8 @@ input[type="radio"].visually-hidden {
   padding-bottom: 40px;
 
   background-color: #f7e296;
+
+  z-index: 99;
 }
 
 .product-nav-item {
@@ -405,6 +407,14 @@ a.user-search:active {
                                                rgba(240, 197, 46, 0.5) 110px,
                                                            transparent 110px,
                                                            transparent 100%);
+}
+
+.slider-item {
+  display: none;
+}
+
+.slider-item:first-child {
+  display: flex;
 }
 
 .slider-item::before {
@@ -721,28 +731,35 @@ a.user-search:active {
   margin-left: 120px;
 }
 
-.service-delivery {
+.service-description {
+  display: none;
+}
+
+.service-description:nth-child(2) {
+  display: block;
+}
+
+.service-description:nth-child(1) {
   background-image: url("../img/delivery.svg");
   background-position: top 10px right 75px;
   background-repeat: no-repeat;
 }
 
-.service-warranty {
+.service-description:nth-child(2) {
   background-image: url("../img/warranty.svg");
   background-position: top 10px right 75px;
   background-repeat: no-repeat;
 }
 
-.service-credit {
+.service-description:nth-child(3) {
   background-image: url("../img/credit.svg");
   background-position: top 10px right 75px;
   background-repeat: no-repeat;
 }
 
-.service-delivery-wrapper,
-.service-warranty-wrapper,
-.service-credit-wrapper {
-  width: 460px;
+.service-description-wrapper {
+  max-width: 435px;
+  padding-bottom: 20px;
 }
 
 .services h3 {
