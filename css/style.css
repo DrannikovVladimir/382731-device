@@ -666,7 +666,7 @@ a.user-search:active {
 }
 
 .services-wrapper {
-  position: absolute;
+  position: relative;
 
   display: flex;
   justify-content: space-between;
@@ -735,7 +735,7 @@ a.user-search:active {
   display: none;
 }
 
-.service-description:nth-child(2) {
+.service-description:nth-child(1) {
   display: block;
 }
 
