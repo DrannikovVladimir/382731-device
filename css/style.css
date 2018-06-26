@@ -556,14 +556,23 @@ a.user-search:active {
 }
 
 .slide-radio {
-  position: relative;
-
-  width: 16px;
-  height: 16px;
   padding: 5px;
 }
 
-.slide-radio::after {
+.slide-button {
+  position: relative;
+
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.slide-button-current::after {
   content: "";
 
   position: absolute;
@@ -571,29 +580,12 @@ a.user-search:active {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 10px;
-  height: 10px;
+  width: 2px;
+  height: 2px;
 
   border: 1px solid #000000;
   border-radius: 50%;
 }
-
-.slide-radio-active::before {
-  content: "";
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 4px;
-  height: 4px;
-
-  border: 1px solid #000000;
-  border-radius: 50%;
-}
-
-
 
 
 /* Оформление секции категории товаров */
