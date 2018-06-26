@@ -789,8 +789,7 @@ a.user-search:active {
   height: 100px;
 }
 
-.brands-item:nth-child(1) {
-  background: #ffffff url("../img/brands/logo1-black.png") center center no-repeat;
+.brands-item:nth-child(1) img {
   opacity: 0.2;
 }
 
@@ -799,8 +798,7 @@ a.user-search:active {
   opacity: 1;
 }
 
-.brands-item:nth-child(2) {
-  background: #ffffff url("../img/brands/logo2-black.png") center center no-repeat;
+.brands-item:nth-child(2) img {
   opacity: 0.2;
 }
 
@@ -809,8 +807,7 @@ a.user-search:active {
   opacity: 1;
 }
 
-.brands-item:nth-child(3) {
-  background: #ffffff url("../img/brands/logo3-black.png") center center no-repeat;
+.brands-item:nth-child(3) img {
   opacity: 0.2;
 }
 
@@ -819,8 +816,7 @@ a.user-search:active {
   opacity: 1;
 }
 
-.brands-item:nth-child(4) {
-  background: #ffffff url("../img/brands/logo4-black.png") center center no-repeat;
+.brands-item:nth-child(4) img {
   opacity: 0.2;
 }
 
