@@ -1009,13 +1009,26 @@ a.user-search:active {
   align-items: center;
 }
 
-.user-link svg,
-.user-link path {
-  fill: #ffc600;
-}
-
 .main-footer .user-nav-item {
   margin-left: 40px;
+}
+
+.main-footer .user-profile {
+  padding-left: 27px;
+
+  background: url("../img/user-yellow.svg") left center no-repeat;
+}
+
+.main-footer .user-compare {
+  padding-left: 23px;
+
+  background: url("../img/compare-yellow.svg") left center no-repeat;
+}
+
+.main-footer .user-cart {
+  padding-left: 26px;
+
+  background: url("../img/cart-yellow.svg") left center no-repeat;
 }
 
 .contact-nav {
@@ -1043,7 +1056,6 @@ a.user-search:active {
 
 .main-footer-bottom {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -1070,11 +1082,24 @@ a.user-search:active {
 }
 
 .social-button {
+  display: block;
   width: 32px;
   height: 32px;
 
   background-color: #464646;
   opacity: 0.3;
+}
+
+.social-button-facebook {
+  background: url("../img/fb.svg") center center no-repeat;
+}
+
+.social-button-instagram {
+  background: url("../img/instagram.svg") center center no-repeat;
+}
+
+.social-button-twitter {
+  background: url("../img/twitter.svg") center center no-repeat;
 }
 
 .social-button:hover,
@@ -1119,12 +1144,20 @@ a.user-search:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.htmlacademy img:focus,
-.htmlacademy img:hover {
+.htmlacademy {
+  display: block;
+  width: 27px;
+  height: 35px;
+
+  background: #464646 url("../img/logo-html.svg") center center no-repeat;
+}
+
+.htmlacademy:focus,
+.htmlacademy:hover {
   opacity: 0.6;
 }
 
-.htmlacademy img:active {
+.htmlacademy:active {
   opacity: 0.3;
 }
 
