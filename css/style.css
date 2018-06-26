@@ -1463,10 +1463,17 @@ a.user-search:active {
   background: #eeeeee url("../img/radio-on.svg") center center no-repeat;
 }
 
-.filter-input:hover + label::before,
-.filter-input:hover + label::after,
 .filter-input:focus + label::before,
 .filter-input:focus + label::after {
+  opacity: 0.6;
+
+  border-color: #72b9f8;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-input:hover + label::before,
+.filter-input:hover + label::after {
   opacity: 0.6;
 }
 
@@ -1494,7 +1501,7 @@ a.user-search:active {
 .catalog {
   width: 760px;
   padding-top: 70px;
-  z-index: 9999;
+  z-index: 2;
 }
 
 .catalog h2 {
@@ -1771,14 +1778,78 @@ a.user-search:active {
 }
 
 
-/* Оформление модального окна с формой */
-.modal-contact {
+/* Оформление модальных окон */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 960px;
+  box-sizing: border-box;
+
   color: #000000;
 
   background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+  z-index: 99;
+}
+
+.modal p {
+  margin: 0;
+}
+
+
+/* Кнопка закрытыя модальных окон */
+.button-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  width: 55px;
+  height: 55px;
+
+  font-size: 0;
+
+  background: url("../img/modal-close.svg") center center no-repeat;
+  border: 0;
+
+  opacity: 0.5;
+  cursor: pointer;
+
+  z-index: 100;
+}
+
+.button-close:hover,
+.button-close:focus {
+  opacity: 1;
+}
+
+.button-close:active {
+  opacity: 0.3;
+}
+
+/* Оформление модального окна с формой */
+.modal-contact {
+  display: none;
+  padding: 90px 100px;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-wrapper .contact-input {
+  width: 360px;
+  margin-bottom: 35px;
 }
 
 .contact-label {
+  display: block;
+  margin-bottom: 10px;
+
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1786,7 +1857,13 @@ a.user-search:active {
   letter-spacing: 0;
 }
 
-.contact-item .contact-input {
+.contact-input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin-bottom: 35px;
+  padding: 16px 20px;
+
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0;
@@ -1795,11 +1872,36 @@ a.user-search:active {
   border: none;
 }
 
-.contact-item .contact-input:hover {
-  background-color: rgba(229, 229, 229, 1);
+.contact-form .contact-input:hover {
+  background-color: rgba(229, 229, 229, 0.8);
 }
 
-.contact-item .contact-input:focus {
+.contact-form .contact-input:focus {
   background-color: rgba(255, 255, 255, 1);
   border: 3px solid #f0c52e;
+}
+
+
+/* Скрываем placeholder при наведении */
+.contact-input:focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+.contact-input:focus::-moz-placeholder {
+  color: transparent
+}
+
+.contact-input:focus:-moz-placeholder {
+  color: transparent
+}
+
+.contact-input:focus:-ms-input-placeholder {
+  color: transparent
+}
+
+
+/* Оформление модального окна с картой  */
+.modal-map {
+  display: none;
+  height: 559px;
 }
