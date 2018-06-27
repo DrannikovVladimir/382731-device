@@ -140,10 +140,16 @@
                       <div class="bar"></div>
                     </div>
                     <div class="toggle toggle-min">
-                      <input class="toggle-input toggle-min-input" type="text" value="от 0">
+                      <div class="toggle-wrapper">
+                        <label for="min-value">от</label>
+                        <input class="toggle-input toggle-min-input" id="min-value" name="min-value" type="text" placeholder="0">
+                      </div>
                     </div>
                     <div class="toggle toggle-max">
-                      <input class="toggle-input toggle-max-input" type="text" value="до 5000">
+                      <div class="toggle-wrapper">
+                        <label for="max-value">до</label>
+                        <input class="toggle-input toggle-max-input" id="max-value" name="max-value" type="text" placeholder="5000">
+                      </div>
                     </div>
                   </div>
                 </fieldset>
