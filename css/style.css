@@ -88,7 +88,8 @@ input[type="radio"].visually-hidden {
 
 .button {
   min-width: 160px;
-  padding: 7px 0;
+  padding: 7px 15px;
+  box-sizing: border-box;
 
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
@@ -951,9 +952,8 @@ a.user-search:active {
 }
 
 .button-contacts {
-  min-width: 260px;
-  padding-left: 40px;
-  padding-right: 40px;
+  display: block;
+  width: 260px;
 }
 
 
