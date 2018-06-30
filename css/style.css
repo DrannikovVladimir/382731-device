@@ -206,6 +206,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-logo {
+  width: 165px;
   margin-bottom: 16px;
 
   line-height: 13px;
@@ -1320,10 +1321,10 @@ a.user-search:active {
   border: none;
 }
 
-.filters legend {
+.filter-fieldset legend {
   position: relative;
 
-  margin-bottom: 35px;
+  margin-bottom: 18px;
   padding-top: 12px;
 
   font-family: "Gilroy", "Tahoma", sans-serif;
@@ -1331,6 +1332,10 @@ a.user-search:active {
   line-height: 24px;
   font-weight: 800;
   letter-spacing: 0.010em;
+}
+
+.filter-fieldset:first-child legend {
+  margin-bottom: 37px;
 }
 
 .filters legend::before {
@@ -1438,9 +1443,10 @@ a.user-search:active {
 }
 
 .filter-option {
-  /* margin-bottom: 10px; */
-  min-height: 40px;
+  /* min-height: 40px; */
   padding-left: 40px;
+
+  line-height: 40px;
 }
 
 .filter-option label {
@@ -1451,24 +1457,25 @@ a.user-search:active {
   cursor: pointer;
 }
 
-.filter-input + label::before {
+.filter-input-checkbox + label::before {
   content: "";
 
   position: absolute;
   top: 50%;
-  left: -39px;
+  left: -42px;
   transform: translateY(-50%);
 
   width: 27px;
-  height: 27px;
+  height: 23px;
 
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
   background-image: url("../img/checkbox-off.svg");
   background-position: left center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.filter-input:checked + label::before {
+.filter-input-checkbox:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
@@ -1487,6 +1494,7 @@ a.user-search:active {
   background-image: url("../img/radio-off.svg");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .filter-input-radio:checked + label::before {
@@ -1517,8 +1525,8 @@ a.user-search:active {
 }
 
 .filter-list-checkbox {
-  margin-bottom: 28px;
-  margin-left: -3px;
+  margin-bottom: 30px;
+  /* margin-left: -2px; */
 }
 
 .filters .legend-bluetooth {
@@ -1526,8 +1534,8 @@ a.user-search:active {
 }
 
 .filter-list-radio {
-  margin-bottom: 27px;
-  margin-left: -3px;
+  margin-bottom: 33px;
+  /* margin-left: -3px; */
 }
 
 .filter-button {
@@ -1612,32 +1620,38 @@ a.user-search:active {
   margin-bottom: 45px;
 }
 
-.catalog-item::before {
-  content: "";
-
-  position: absolute;
-  top: 29px;
-  right: 27px;
-
-  display: none;
-  width: 60px;
-  height: 60px;
-
-  background: url("../img/new.png") center center no-repeat;
-
-  z-index: 1;
-}
-
-.catalog-item:nth-child(4)::before {
-  display: block;
-}
-
 .catalog-item:last-of-type {
   margin-bottom: 35px;
 }
 
 .card-product {
   position: relative;
+}
+
+.card-product-label::before {
+  content: "new";
+
+  position: absolute;
+  top: 29px;
+  right: 27px;
+
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.2;
+
+
+  z-index: 1;
 }
 
 .catalog-item-hover {
