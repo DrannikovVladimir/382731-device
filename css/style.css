@@ -789,25 +789,28 @@ a.user-search:active {
   opacity: 0.2;
 }
 
-.brands-item:hover {
+.brands-item-dji:hover,
+.brands-item-spgadget:hover,
+.brands-item-gopro:hover,
+.brands-item-vive:hover {
   opacity: 1;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.brands-item:nth-child(1):hover {
+.brands-item-dji:hover {
   background-image: url("../img/brands/logo1.png");
 }
 
-.brands-item:nth-child(2):hover {
+.brands-item-spgadget:hover {
   background-image: url("../img/brands/logo2.png");
 }
 
-.brands-item:nth-child(3):hover {
+.brands-item-gopro:hover {
   background-image: url("../img/brands/logo3.png");
 }
 
-.brands-item:nth-child(4):hover {
+.brands-item-vive:hover {
   background-image: url("../img/brands/logo4.png");
 }
 
@@ -1298,34 +1301,30 @@ a.user-search:active {
 
 .filters {
   min-width: 268px;
-  padding-top: 68px;
+  padding-top: 69px;
 
   background-color: #eeeeee;
-}
-
-.title-wrapper {
-  display: flex;
-  align-items: center;
-  min-height: 70px;
-  margin-bottom: 70px;
 }
 
 .filter-form {
   max-width: 200px;
 }
 
-.filters fieldset {
+.filter-fieldset {
   margin: 0;
   padding: 0;
 
   border: none;
 }
 
-.filter-fieldset legend {
+.filter-legend {
   position: relative;
 
-  margin-bottom: 18px;
-  padding-top: 12px;
+  width: 100%;
+  margin-bottom: 14px;
+  padding-top: 13px;
+
+  border-top: 2px solid #000000;
 
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
@@ -1334,31 +1333,16 @@ a.user-search:active {
   letter-spacing: 0.010em;
 }
 
-.filter-fieldset:first-child legend {
-  margin-bottom: 37px;
-}
-
-.filters legend::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 201px;
-  height: 2px;
-
-  background-color: #000000;
-}
-
 .range-controls {
   position: relative;
+
+  padding: 19px 0;
+  margin-bottom: 47px;
 }
 
 .range-controls .scale {
   width: 100%;
   height: 2px;
-  margin-bottom: 67px;
 
   background-color: #dbdbdb;
 }
@@ -1372,7 +1356,7 @@ a.user-search:active {
 
 .range-controls .toggle {
   position: absolute;
-  top: -10px;
+  top: 9px;
 
   width: 4px;
   height: 4px;
@@ -1433,17 +1417,13 @@ a.user-search:active {
 
 .filter-list {
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
 
   list-style: none;
 }
 
-.filters .legend-color {
-  margin-bottom: 23px;
-}
-
 .filter-option {
-  /* min-height: 40px; */
   padding-left: 40px;
 
   line-height: 40px;
@@ -1453,8 +1433,6 @@ a.user-search:active {
   position: relative;
 
   display: block;
-
-  cursor: pointer;
 }
 
 .filter-input-checkbox + label::before {
@@ -1522,20 +1500,6 @@ a.user-search:active {
 
 .filter-input:disabled + label {
   color: #a6a6a6;
-}
-
-.filter-list-checkbox {
-  margin-bottom: 30px;
-  /* margin-left: -2px; */
-}
-
-.filters .legend-bluetooth {
-  margin-bottom: 23px;
-}
-
-.filter-list-radio {
-  margin-bottom: 33px;
-  /* margin-left: -3px; */
 }
 
 .filter-button {
