@@ -789,28 +789,28 @@ a.user-search:active {
   opacity: 0.2;
 }
 
-.brands-item-dji:hover,
-.brands-item-spgadget:hover,
-.brands-item-gopro:hover,
-.brands-item-vive:hover {
+.brands-item-dji a:hover,
+.brands-item-spgadget a:hover,
+.brands-item-gopro a:hover,
+.brands-item-vive a:hover {
   opacity: 1;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.brands-item-dji:hover {
+.brands-item-dji a:hover {
   background-image: url("../img/brands/logo1.png");
 }
 
-.brands-item-spgadget:hover {
+.brands-item-spgadget a:hover {
   background-image: url("../img/brands/logo2.png");
 }
 
-.brands-item-gopro:hover {
+.brands-item-gopro a:hover {
   background-image: url("../img/brands/logo3.png");
 }
 
-.brands-item-vive:hover {
+.brands-item-vive a:hover {
   background-image: url("../img/brands/logo4.png");
 }
 
@@ -1424,7 +1424,7 @@ a.user-search:active {
 }
 
 .filter-option {
-  padding-left: 40px;
+  padding-left: 42px;
 
   line-height: 40px;
 }
@@ -1950,4 +1950,10 @@ a.user-search:active {
 .modal-map {
   display: none;
   height: 559px;
+}
+
+
+/* Показываем окна при клике */
+.modal-show {
+  display: block;
 }
