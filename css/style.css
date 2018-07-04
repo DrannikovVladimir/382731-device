@@ -1952,8 +1952,35 @@ a.user-search:active {
   height: 559px;
 }
 
+.modal-map iframe {
+  position: relative;
+
+  z-index: 99;
+}
+
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+}
+
 
 /* Показываем окна при клике */
 .modal-show {
   display: block;
+  animation-name: appearance;
+  animation-duration: 0.8s;
+}
+
+
+/* Анимация для модальных окон */
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
