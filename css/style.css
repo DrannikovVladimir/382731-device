@@ -2269,6 +2269,11 @@ a.user-search:active {
   z-index: 1;
 }
 
+.modal-map iframe {
+  width: 960px;
+  height: 560px;
+}
+
 
 /* Показываем окно при клике */
 .modal-show {
