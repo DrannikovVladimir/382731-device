@@ -2272,6 +2272,7 @@ a.user-search:active {
 .modal-map iframe {
   width: 960px;
   height: 560px;
+  border: none;
 }
 
 
