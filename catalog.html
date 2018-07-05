@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link href="css/normalize.css"  rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylemin.css" rel="stylesheet">
   </head>
   <body>
 
@@ -24,7 +24,7 @@
 
         </li>
         <li class="user-nav-item">
-          <a class="user-profile" href="#">Валентин Петухов</a>
+          <a class="user-profile" href="profile.html">Валентин Петухов</a>
         </li>
         <li class="user-nav-item">
           <a class="user-logout" href="#">Выйти</a>
@@ -298,7 +298,7 @@
           </a>
           <ul class="user-nav-list footer-user-nav-list">
             <li class="user-nav-item">
-              <a class="user-link user-profile" href="#">Валентин Петухов</a>
+              <a class="user-link user-profile" href="profile.html">Валентин Петухов</a>
             </li>
             <li class="user-nav-item">
               <a class="user-link user-logout" href="#">
@@ -368,21 +368,23 @@
         <div class="contact-wrapper">
           <p class="contact-name">
             <label class="contact-label" for="contact-name">Ваше имя:</label>
-            <input class="contact-input" id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
+            <input class="contact-input" id="contact-name" type="text" name="name" placeholder="Имя Фамилия" required>
           </p>
           <p class="contact-email">
             <label class="contact-label" for="contact-email">Ваш email:</label>
-            <input class="contact-input" id="contact-email" type="email" name="email" placeholder="email@example.com">
+            <input class="contact-input" id="contact-email" type="email" name="email" placeholder="email@example.com" required>
           </p>
         </div>
         <p class="contact-message">
           <label class="contact-label" for="contact-message">Текст письма</label>
-          <textarea class="contact-input" id="contact-message" name="message" rows="8" placeholder="В свободной форме"></textarea>
+          <textarea class="contact-input" id="contact-message" name="message" rows="8" placeholder="В свободной форме" required></textarea>
         </p>
         <button class="button button-contact" type="submit">Отправить</button>
         <button class="button-close" type="button">Закрыть</button>
       </form>
     </section>
+
+    <script src="popupmin.js"></script>
 
   </body>
 </html>
