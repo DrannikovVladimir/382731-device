@@ -64,6 +64,8 @@ var linkMap = document.querySelector(".map-link");
 var popupMap = document.querySelector(".modal-map");
 var closeMap = document.querySelector(".button-close-map");
 
+linkMap.classList.remove("map-link-no-js");
+
 linkMap.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupMap.classList.add("modal-show");

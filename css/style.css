@@ -1,4 +1,4 @@
-/* Подключение шрифтов */
+
 @font-face {
     font-family: "Gilroy";
     src: local("Gilroy-ExtraBold"),
@@ -36,7 +36,7 @@
 }
 
 
-/* Глобальные параметры */
+
 body {
   min-width: 1200px;
   margin: 0;
@@ -152,7 +152,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* Стилизация формы поиска */
+
 .input-search {
   display: block;
   width: 351px;
@@ -225,7 +225,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* Оформление шапки */
+
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,7 +465,7 @@ a.user-search:active {
 }
 
 
-/* Оформление секции лучшие товары */
+
 .best-products {
   margin-bottom: 97px;
 }
@@ -515,7 +515,7 @@ a.user-search:active {
   display: none;
 }
 
-.slider-item:first-child {
+.slider-item:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,8 +592,9 @@ a.user-search:active {
 .wrapper-text {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  width: 490px;
+  width: 501px;
   padding-top: 80px;
+  z-index: 1;
 }
 
 .wrapper-text p {
@@ -676,32 +677,20 @@ a.user-search:active {
   display: block;
   width: 13px;
   height: 13px;
-  padding: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  border: none;
 
-  background-color: #ffffff;
-  border: 1px solid #000000;
-  border-radius: 50%;
+  background: url("../img/slider-button-empty.svg") 0 0 no-repeat;
+  background-size: contain;
 }
 
-.slide-button-current::after {
-  content: "";
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-
-  width: 2px;
-  height: 2px;
-
-  border: 1px solid #000000;
-  border-radius: 50%;
+.slide-button-current {
+  background-image: url("../img/slider-button.svg");
 }
 
 
-/* Оформление секции категории товаров */
+
 .category {
   margin-bottom: 80px;
 }
@@ -719,6 +708,7 @@ a.user-search:active {
 }
 
 .category-product-title {
+  width: 165px;
   margin: 0;
 
   font-family: "Gilroy", "Tahoma", sans-serif;
@@ -729,27 +719,48 @@ a.user-search:active {
   color: #000000;
 }
 
+.category-product-title span {
+  display: block;
+}
+
 .category .wrapper-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 160px;
   height: 160px;
   margin-bottom: 35px;
+  box-sizing: border-box;
+  text-align: left;
 
   background-color: rgba(240, 197, 46, 0.5);
 }
 
+.category-product-item:nth-child(1) .wrapper-img {
+  padding-top: 52px;
+  padding-left: 31px;
+}
+
 .category-product-item:nth-child(2) .wrapper-img {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  padding-top: 41px;
+  padding-left: 38px;
+}
+
+.category-product-item:nth-child(3) .wrapper-img {
+  padding-top: 38px;
+  padding-left: 49px;
+}
+
+.category-product-item:nth-child(4) .wrapper-img {
+  padding-top: 50px;
+  padding-left: 28px;
+}
+
+.category-product-item:nth-child(5) .wrapper-img {
+  padding-top: 32px;
+  padding-left: 55px;
+}
+
+.category-product-item:nth-child(6) .wrapper-img {
+  padding-top: 49px;
+  padding-left: 13px;
 }
 
 .category-product-item {
@@ -773,8 +784,8 @@ a.user-search:active {
 
 /* Оформление секции сервисы */
 .services {
-  margin-bottom: 93px;
-  min-height: 390px;
+  margin-bottom: 94px;
+  min-height: 388px;
 
   background-image: -webkit-linear-gradient(#ffffff 0,
                                     #ffffff 100px,
@@ -900,9 +911,9 @@ a.user-search:active {
 
 
 
-/* Оформление секции Бренды */
+
 .brands {
-  margin-bottom: 90px;
+  margin-bottom: 92px;
 }
 
 .brands-list {
@@ -957,7 +968,7 @@ a.user-search:active {
 }
 
 
-/* Обёртка для контактов и о компании */
+
 .wrapper-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -967,11 +978,12 @@ a.user-search:active {
           justify-content: space-between;
 
   width: 1160px;
-  margin: 0 auto 80px;
+  margin: 0 auto 81px;
   padding: 0 20px;
 }
 
-/* Оформление секции о компании */
+
+
 .company {
   position: relative;
 
@@ -1053,7 +1065,6 @@ a.user-search:active {
 }
 
 
-/* Оформление секции контакты */
 .contacts {
   position: relative;
 
@@ -1090,14 +1101,46 @@ a.user-search:active {
   margin-bottom: 40px;
 }
 
+.wrap-map-link {
+  position: relative;
+
+  margin-bottom: 70px;
+  width: 560px;
+  height: 222px;
+}
+
 .contacts .map-link {
+  position: absolute;
+
   display: block;
-  margin-bottom: 65px;
+  width: 100%;
+  height: 100%;
+
+  z-index: 10;
+}
+
+.wrap-map-link iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+
+  z-index: 1;
 }
 
 .map-link img {
-  width: 560px;
-  height: 222px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  z-index: 0;
+}
+
+.map-link-no-js img {
+  display: block;
 }
 
 .button-contacts {
@@ -1106,7 +1149,7 @@ a.user-search:active {
 }
 
 
-/* Офотмление подвала */
+
 .main-footer {
   color: #ffffff;
 
@@ -1186,7 +1229,7 @@ a.user-search:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 62px;
+  margin-bottom: 60px;
 }
 
 .main-footer .footer-site-nav {
@@ -1199,9 +1242,10 @@ a.user-search:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 430px;
-      flex-basis: 430px;
+  -ms-flex-preferred-size: 427px;
+      flex-basis: 426px;
   margin-right: auto;
+  padding-top: 2px;
 }
 
 .contact-nav .address {
@@ -1283,7 +1327,6 @@ a.user-search:active {
 
 .footer-user-nav-list a {
   color: rgba(255, 255, 255, 0.7);
-  /* line-height: 36px; */
 }
 
 .footer-user-nav-list a:hover,
@@ -1332,14 +1375,14 @@ a.user-search:active {
 }
 
 
-/* Оформление контейнера на внутренней странице */
+
 .container-inner-page {
   width: 1100px;
   padding-left: 80px;
 }
 
 
-/* Оформление шапки каталога и фильтра */
+
 .catalog-column .catalog-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1359,7 +1402,6 @@ a.user-search:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* min-height: 70px; */
   padding: 20px 0;
 
   background-image: -webkit-linear-gradient(left,
@@ -1438,7 +1480,6 @@ a.user-search:active {
 
 
 
-/* Оформление шапки на внутренней странице */
 .main-header-inner-page .main-header {
   margin-bottom: 34px;
 }
@@ -1461,7 +1502,7 @@ a.user-search:active {
 }
 
 
-/* Оформление заголовка на внутренней странице */
+
 .main-header-inner-page {
   margin-bottom: 37px;
 }
@@ -1478,7 +1519,8 @@ a.user-search:active {
   letter-spacing: 0.010em;
 }
 
-/* Оформление хлебных крошек */
+
+
 .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1513,7 +1555,7 @@ a.user-search:active {
 }
 
 
-/* Оформление колонок каталога */
+
 .catalog-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1541,7 +1583,6 @@ a.user-search:active {
 }
 
 
-/* Оформление секции фильтры */
 
 .filters {
   min-width: 268px;
@@ -1565,8 +1606,8 @@ a.user-search:active {
   position: relative;
 
   width: 100%;
-  margin-bottom: 14px;
-  padding-top: 13px;
+  margin-bottom: 15px;
+  padding-top: 11px;
 
   border-top: 2px solid #000000;
 
@@ -1581,7 +1622,7 @@ a.user-search:active {
   position: relative;
 
   padding: 19px 0;
-  margin-bottom: 47px;
+  margin-bottom: 48px;
 }
 
 .range-controls .scale {
@@ -1668,14 +1709,14 @@ a.user-search:active {
 
 .filter-list {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
   padding: 0;
 
   list-style: none;
 }
 
 .filter-option {
-  padding-left: 42px;
+  padding-left: 40px;
 
   line-height: 40px;
 }
@@ -1691,19 +1732,17 @@ a.user-search:active {
 
   position: absolute;
   top: 50%;
-  left: -42px;
+  left: -40px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 
-  width: 27px;
-  height: 23px;
+  width: 30px;
+  height: 25px;
 
-  /* background-color: #eeeeee; */
   background-image: url("../img/checkbox-off.svg");
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -1720,14 +1759,13 @@ a.user-search:active {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 27px;
 
   background-color: #eeeeee;
   background-image: url("../img/radio-off.svg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .filter-input-radio:checked + label::before {
@@ -1763,7 +1801,7 @@ a.user-search:active {
 
 
 
-/* Оформление секции каталога */
+
 .catalog {
   width: 760px;
   padding-top: 70px;
@@ -1882,7 +1920,7 @@ a.user-search:active {
   vertical-align: middle;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  opacity: 0.2;
+  opacity: 0.1;
 
 
   z-index: 1;
@@ -1942,6 +1980,15 @@ a.user-search:active {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.card-product-title span {
+  min-width: 100px;
+  text-align: right;
+}
+
+.catalog-item:nth-child(2) h3 {
+  max-width: 200px;
 }
 
 .catalog-list h3 {
@@ -2017,7 +2064,7 @@ a.user-search:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 75px;
+  margin-bottom: 77px;
 
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -2048,7 +2095,7 @@ a.user-search:active {
 }
 
 .pagination-item:first-child {
-  margin-right: auto;
+  margin-right: 194px;
 }
 
 .pagination-item:last-child {
@@ -2056,7 +2103,7 @@ a.user-search:active {
 }
 
 .pagination-item:not(:first-child):not(:last-child) {
-  margin: 0 15px;
+  margin: 0 14px;
 }
 
 .pagination-item-current a {
@@ -2087,7 +2134,7 @@ a.user-search:active {
 
 
 
-/* Оформление футера на странице каталога */
+
 .inner-page-footer .container {
   width: 1160px;
   padding: 65px 20px;
@@ -2116,15 +2163,13 @@ a.user-search:active {
 }
 
 
-/* Оформление модальных окон */
+
 .modal {
   position: fixed;
-  top: 50%;
+  top: 60px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 
+  margin-left: -480px;
   width: 960px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2143,7 +2188,7 @@ a.user-search:active {
 }
 
 
-/* Кнопка закрытыя модальных окон */
+
 .button-close {
   position: absolute;
   top: 22px;
@@ -2172,7 +2217,8 @@ a.user-search:active {
   opacity: 0.3;
 }
 
-/* Оформление модального окна с формой */
+
+
 .modal-contact {
   display: none;
   padding: 90px 100px;
@@ -2230,7 +2276,6 @@ a.user-search:active {
   border-color: #f0c52e;
 }
 
-
 /* Скрываем placeholder при наведении */
 .contact-input:focus::-webkit-input-placeholder {
   color: transparent
@@ -2249,7 +2294,7 @@ a.user-search:active {
 }
 
 
-/* Оформление модального окна с картой  */
+
 .modal-map {
   display: none;
   height: 559px;
@@ -2276,7 +2321,7 @@ a.user-search:active {
 }
 
 
-/* Показываем окно при клике */
+
 .modal-show {
   display: block;
   -webkit-animation-name: appearance;
@@ -2286,20 +2331,20 @@ a.user-search:active {
 }
 
 
-/* Анимация для модальных окон */
+
 @-webkit-keyframes appearance {
   0% {
-    opacity: 0;
+    transform: translateX()(-2000px);
   }
   100% {
-    opacity: 1;
+    transform: translateX(0);
   }
 }
 @keyframes appearance {
   0% {
-    opacity: 0;
+    transform: translateX(-2000px);
   }
   100% {
-    opacity: 1;
+    transform: translateX(0);
   }
 }

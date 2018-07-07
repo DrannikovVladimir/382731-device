@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Device</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/stylemin.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -123,7 +123,7 @@
                 <img src="img/best/quadrupter.png" width="526" height="334" alt="Квадракортер">
               </div>
               <div class="wrapper-text">
-                <p>Порхает как бабочка,<br>жалит как пчела!</p>
+                <p>Порхает как бабочка, жалит как пчела!</p>
                 <p class="text-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                 <a class="button button-products" href="">Подробнее</a>
                 <table class="table-description">
@@ -176,7 +176,7 @@
                 <div class="wrapper-img">
                   <img src="img/category/2.svg" width="86" height="117" alt="Моноподы для селфи">
                 </div>
-                <h3 class="category-product-title">Моноподы<br>для селфи</h3>
+                <h3 class="category-product-title">Моноподы <span>для селфи</span></h3>
               </a>
             </li>
             <li class="category-product-item">
@@ -298,9 +298,12 @@
         <section class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="map-link" href="http://maps.google.com">
-            <img src="img/map.jpg" width="560" height="222" alt="Интерактивная карта">
-          </a>
+          <div class="wrap-map-link">
+            <a class="map-link map-link-no-js" href="http://maps.google.com">
+              <img src="img/map.jpg" width="560" height="222" alt="Интерактивная карта">
+            </a>
+            <iframe src="https://yandex.kz/map-widget/v1/-/CBuJYGhkLC"></iframe>
+          </div>
           <a class="button button-contacts" href="https://www.google.com/maps">Напишите нам</a>
         </section>
       </div>
@@ -398,7 +401,7 @@
       </form>
     </section>
 
-    <script src="js/popupmin.js"></script>
+    <script src="js/popup.min.js"></script>
 
   </body>
 </html>
