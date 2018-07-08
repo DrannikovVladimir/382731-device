@@ -615,6 +615,10 @@ a.user-search:active {
   color: #000000;
 }
 
+.table-description {
+  margin-left: -2px;
+}
+
 .table-description tr:first-child {
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 36px;
@@ -647,13 +651,11 @@ a.user-search:active {
 
 .slides-switches {
   position: absolute;
-  top: 320px;
-  right: 100px;
+  top: 322px;
+  right: 98px;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -661,7 +663,7 @@ a.user-search:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 85px;
+  width: 88px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -836,7 +838,7 @@ a.user-search:active {
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
-  letter-spacing: 0.010em;
+  letter-spacing: 0.020em;
   color: #000000;
 }
 
@@ -907,6 +909,8 @@ a.user-search:active {
 .service-description-wrapper {
   max-width: 435px;
   padding-bottom: 20px;
+
+  letter-spacing: 0.02em;
 }
 
 
@@ -1022,7 +1026,10 @@ a.user-search:active {
 }
 
 .company p:last-of-type {
+  max-width: 465px;
   margin-bottom: 67px;
+
+  letter-spacing: -0.01em;
 }
 
 .transport-list {
@@ -1461,7 +1468,7 @@ a.user-search:active {
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
 }
 
@@ -1585,7 +1592,8 @@ a.user-search:active {
 
 
 .filters {
-  min-width: 268px;
+  min-width: 270px;
+  margin-left: -2px;
   padding-top: 69px;
 
   background-color: #eeeeee;
@@ -1654,11 +1662,11 @@ a.user-search:active {
 }
 
 .range-controls .toggle-min {
-  left: -6px;
+  left: -4px;
 }
 
 .range-controls .toggle-max {
-  left: 105px;
+  left: 110px;
 }
 
 .range-controls > .toggle {
@@ -1681,7 +1689,7 @@ a.user-search:active {
 }
 
 .toggle-max .toggle-wrapper {
-  left: -25px;
+  left: -29px;
 }
 
 .toggle-wrapper label {
@@ -1709,7 +1717,7 @@ a.user-search:active {
 
 .filter-list {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   padding: 0;
 
   list-style: none;
@@ -1727,8 +1735,14 @@ a.user-search:active {
   display: block;
 }
 
+.filter-option label {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
 .filter-input-checkbox + label::before {
-  content: "";
+  content: url("../img/checkbox-off.svg");
+  display: block;
 
   position: absolute;
   top: 50%;
@@ -1737,20 +1751,16 @@ a.user-search:active {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 
-  width: 30px;
+  width: 25px;
   height: 25px;
-
-  background-image: url("../img/checkbox-off.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
 }
 
 .filter-input-checkbox:checked + label::before {
-  background-image: url("../img/checkbox-on.svg");
+  content:  url("../img/checkbox-on.svg");
 }
 
 .filter-input-radio + label::before {
-  content: "";
+  content: url("../img/radio-off.svg");
 
   position: absolute;
   top: 50%;
@@ -1759,17 +1769,13 @@ a.user-search:active {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 
-  width: 26px;
-  height: 27px;
-
-  background-color: #eeeeee;
-  background-image: url("../img/radio-off.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
+  display: block;
+  width: 25px;
+  height: 25px;
 }
 
 .filter-input-radio:checked + label::before {
-  background-image: url("../img/radio-on.svg");
+  content: url("../img/radio-on.svg");
 }
 
 .filter-input:focus + label::before,
@@ -1832,7 +1838,7 @@ a.user-search:active {
 
 .sort-title {
   max-width: 200px;
-  margin-right: 50px;
+  margin-right: 52px;
 }
 
 .sort-list {
@@ -1842,6 +1848,8 @@ a.user-search:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
+  letter-spacing: -0.005em;
 }
 
 .sort-list:first-of-type {
@@ -1849,7 +1857,11 @@ a.user-search:active {
 }
 
 .sort-list:first-of-type .sort-item {
-  margin-right: 30px;
+  margin-right: 26px;
+}
+
+.sort-list:first-of-type .sort-item:nth-child(2) {
+  margin-right: 28px;
 }
 
 .sort-list:last-of-type .sort-item:first-child {
@@ -2074,7 +2086,7 @@ a.user-search:active {
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.21em;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -2092,6 +2104,10 @@ a.user-search:active {
 .pagination-button {
   display: block;
   padding: 23px 30px;
+}
+
+.pagination-item:last-child .pagination-button {
+  padding-right: 25px;
 }
 
 .pagination-item:first-child {
