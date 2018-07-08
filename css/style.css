@@ -521,6 +521,15 @@ a.user-search:active {
   display: flex;
 }
 
+.slider-item:nth-child(1) .text-description {
+  max-width: 485px;
+}
+
+.slider-item:nth-child(2) .text-description,
+.slider-item:nth-child(3) .text-description {
+  max-width: 460px;
+}
+
 .slider-item::before {
   content: "";
 
@@ -597,12 +606,13 @@ a.user-search:active {
   z-index: 1;
 }
 
-.wrapper-text p {
+.wrapper-text .text-slogan {
   margin: 0;
   margin-bottom: 20px;
 }
 
 .wrapper-text .text-description {
+  margin: 0;
   margin-bottom: 43px;
 }
 
