@@ -2066,12 +2066,17 @@ a.user-search:active {
 }
 
 .button-compare {
+  padding: 0;
+
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 36px;
   letter-spacing: 0.010em;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.5);
+
+  border: none;
+  background-color: transparent;
 }
 
 .button-compare:focus,
