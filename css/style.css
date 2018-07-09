@@ -1478,8 +1478,9 @@ a.user-search:active {
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .filter-title-wrapper {
@@ -1634,6 +1635,7 @@ a.user-search:active {
   line-height: 24px;
   font-weight: 800;
   letter-spacing: 0.010em;
+  color: #000000;
 }
 
 .range-controls {
@@ -1748,6 +1750,7 @@ a.user-search:active {
 .filter-option label {
   font-size: 14px;
   letter-spacing: 0;
+  color: #000000;
 }
 
 .filter-input-checkbox + label::before {
@@ -1848,7 +1851,7 @@ a.user-search:active {
 
 .sort-title {
   max-width: 200px;
-  margin-right: 52px;
+  margin-right: 50px;
 }
 
 .sort-list {
@@ -1858,8 +1861,6 @@ a.user-search:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-
-  letter-spacing: -0.005em;
 }
 
 .sort-list:first-of-type {
@@ -1867,11 +1868,11 @@ a.user-search:active {
 }
 
 .sort-list:first-of-type .sort-item {
-  margin-right: 26px;
+  margin-right: 28px;
 }
 
 .sort-list:first-of-type .sort-item:nth-child(2) {
-  margin-right: 28px;
+  margin-right: 32px;
 }
 
 .sort-list:last-of-type .sort-item:first-child {
@@ -2033,8 +2034,14 @@ a.user-search:active {
   list-style: none;
 }
 
-.sort-list a {
+.sort-list .sort-link {
+  font-size: 14px;
+  line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-list .sort-link-active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .sort-list a:focus,
