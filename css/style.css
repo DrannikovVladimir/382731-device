@@ -35,8 +35,6 @@
     font-style: normal;
 }
 
-
-
 body {
   min-width: 1200px;
   margin: 0;
@@ -151,8 +149,6 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
-
 .input-search {
   display: block;
   width: 351px;
@@ -223,8 +219,6 @@ input[type="radio"].visually-hidden {
 .input-search:focus + .button-search {
   opacity: 1;
 }
-
-
 
 .main-header {
   display: -webkit-box;
@@ -464,8 +458,6 @@ a.user-search:active {
   color: rgba(0, 0, 0, 1);
 }
 
-
-
 .best-products {
   margin-bottom: 97px;
 }
@@ -557,7 +549,6 @@ a.user-search:active {
   letter-spacing: 0.010em;
 
   color: #ffffff;
-
 }
 
 .slider-item:nth-child(2)::after {
@@ -676,6 +667,7 @@ a.user-search:active {
   width: 88px;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -692,8 +684,8 @@ a.user-search:active {
   padding: 2px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: none;
 
+  border: none;
   background: url("../img/slider-button-empty.svg") 0 0 no-repeat;
   background-size: contain;
 }
@@ -701,8 +693,6 @@ a.user-search:active {
 .slide-button-current {
   background-image: url("../img/slider-button.svg");
 }
-
-
 
 .category {
   margin-bottom: 20px;
@@ -816,8 +806,6 @@ a.user-search:active {
 .category-product-item a:active h3 {
   opacity: 0.3;
 }
-
-
 
 .services {
   margin-bottom: 94px;
@@ -947,8 +935,6 @@ a.user-search:active {
   letter-spacing: 0.02em;
 }
 
-
-
 .brands {
   margin-bottom: 92px;
 }
@@ -1007,8 +993,6 @@ a.user-search:active {
   background-image: url("../img/brands/logo4.png");
 }
 
-
-
 .wrapper-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1021,8 +1005,6 @@ a.user-search:active {
   margin: 0 auto 81px;
   padding: 0 20px;
 }
-
-
 
 .company {
   position: relative;
@@ -1165,6 +1147,7 @@ a.user-search:active {
 .wrap-map-link iframe {
   width: 100%;
   height: 100%;
+
   border: none;
 
   z-index: 1;
@@ -1190,8 +1173,6 @@ a.user-search:active {
   display: block;
   width: 260px;
 }
-
-
 
 .main-footer {
   color: #ffffff;
@@ -1417,8 +1398,6 @@ a.user-search:active {
   opacity: 0.3;
 }
 
-
-
 .container-inner-page {
   width: 1100px;
   padding-left: 80px;
@@ -1522,8 +1501,6 @@ a.user-search:active {
       flex-basis: 268px;
 }
 
-
-
 .main-header-inner-page .main-header {
   margin-bottom: 34px;
 }
@@ -1545,8 +1522,6 @@ a.user-search:active {
   background: none;
 }
 
-
-
 .main-header-inner-page {
   margin-bottom: 37px;
 }
@@ -1562,8 +1537,6 @@ a.user-search:active {
   color: #000000;
   letter-spacing: 0.010em;
 }
-
-
 
 .breadcrumbs {
   display: -webkit-box;
@@ -1598,8 +1571,6 @@ a.user-search:active {
   color: rgba(0, 0, 0, 0.1);
 }
 
-
-
 .catalog-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1625,8 +1596,6 @@ a.user-search:active {
                                               #ffffff 28%,
                                               #ffffff 100%);
 }
-
-
 
 .filters {
   min-width: 270px;
@@ -1928,7 +1897,6 @@ a.user-search:active {
   height: 16px;
 
   background: transparent url("../img/icon-up-dir.svg") center center no-repeat;
-
   opacity: 0.2;
 }
 
@@ -2226,8 +2194,6 @@ a.user-search:active {
   color: rgba(0, 0, 0, 0.2);
 }
 
-
-
 .inner-page-footer .container {
   width: 1160px;
   padding: 65px 20px;
@@ -2255,8 +2221,6 @@ a.user-search:active {
   margin: 0;
 }
 
-
-
 .modal {
   position: fixed;
   top: 60px;
@@ -2279,8 +2243,6 @@ a.user-search:active {
 .modal p {
   margin: 0;
 }
-
-
 
 .button-close {
   position: absolute;
@@ -2309,8 +2271,6 @@ a.user-search:active {
 .button-close:active {
   opacity: 0.3;
 }
-
-
 
 .modal-contact {
   display: none;
@@ -2398,8 +2358,6 @@ a.user-search:active {
   color: transparent
 }
 
-
-
 .modal-map {
   display: none;
   height: 559px;
@@ -2440,8 +2398,6 @@ a.user-search:active {
           animation-duration: 0.6s;
 }
 
-
-
 @-webkit-keyframes appearance {
   0% {
     -webkit-transform: translateX()(-2000px);
@@ -2452,6 +2408,7 @@ a.user-search:active {
             transform: translateX(0);
   }
 }
+
 @keyframes appearance {
   0% {
     -webkit-transform: translateX(-2000px);
@@ -2462,6 +2419,7 @@ a.user-search:active {
             transform: translateX(0);
   }
 }
+
 @-webkit-keyframes shake {
   0%, 100% {
     -webkit-transform: translateX(0);
@@ -2476,6 +2434,7 @@ a.user-search:active {
             transform: translateX(10px);
   }
 }
+
 @keyframes shake {
   0%, 100% {
     -webkit-transform: translateX(0);
