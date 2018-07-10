@@ -690,7 +690,8 @@ a.user-search:active {
   width: 13px;
   height: 13px;
   padding: 2px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
 
   background: url("../img/slider-button-empty.svg") 0 0 no-repeat;
@@ -714,7 +715,8 @@ a.user-search:active {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -740,7 +742,8 @@ a.user-search:active {
   width: 160px;
   height: 160px;
   margin-bottom: 35px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   text-align: left;
 
@@ -748,9 +751,15 @@ a.user-search:active {
 }
 
 .category-product-item .wrapper-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .category-product-item:nth-child(1) .wrapper-img {
@@ -951,7 +960,8 @@ a.user-search:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -2434,39 +2444,49 @@ a.user-search:active {
 
 @-webkit-keyframes appearance {
   0% {
-    transform: translateX()(-2000px);
+    -webkit-transform: translateX()(-2000px);
+            transform: translateX()(-2000px);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @keyframes appearance {
   0% {
-    transform: translateX(-2000px);
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @-webkit-keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
