@@ -1671,6 +1671,21 @@ a.user-search:active {
   background-color: #b4b4b4;
   -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
           box-shadow: 0 2px 1px 0 #cfcfcf;
+
+}
+
+.range-controls .toggle:active {
+  top: 8px;
+
+  border-width: 9px;
+}
+
+.range-controls .toggle-min:active {
+  left: -5px;
+}
+
+.range-controls .toggle-max:active {
+  left: 109px;
 }
 
 .range-controls .toggle-min {
@@ -1814,6 +1829,11 @@ a.user-search:active {
   color: #a6a6a6;
 }
 
+.filter-input:disabled + label::after,
+.filter-input:disabled + label::before {
+  opacity: 0.25;
+}
+
 .filter-button {
   width: 200px;
 }
@@ -1895,6 +1915,18 @@ a.user-search:active {
   height: 16px;
 
   background: transparent url("../img/icon-down-dir.svg") center center no-repeat;
+}
+
+.sort-link-up:hover,
+.sort-link-down:hover,
+.sort-link-up:focus,
+.sort-link-down:focus {
+  opacity: 0.4;
+}
+
+.sort-link-up:active,
+.sort-link-down:active {
+  opacity: 1;
 }
 
 .catalog-list {
@@ -2077,6 +2109,8 @@ a.user-search:active {
 
   border: none;
   background-color: transparent;
+
+  cursor: pointer;
 }
 
 .button-compare:focus,
@@ -2299,6 +2333,7 @@ a.user-search:active {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0;
+  color: rgba(70, 70, 70, 0.4);
 
   background-color: rgba(229, 229, 229, 0.5);
   border: 3px solid rgba(229, 229, 229, 0);
@@ -2310,11 +2345,17 @@ a.user-search:active {
 }
 
 .contact-form .contact-input:focus {
+  color: rgba(70, 70, 70, 1);
   background-color: rgba(255, 255, 255, 1);
   border-color: #f0c52e;
 }
 
-/* Скрываем placeholder при наведении */
+.contact-form input[type=email]:invalid {
+  background-color: #f6dada;
+  border-color: #f6dada;
+}
+
+
 .contact-input:focus::-webkit-input-placeholder {
   color: transparent
 }
