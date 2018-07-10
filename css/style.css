@@ -1864,9 +1864,6 @@ a.user-search:active {
   width: 200px;
 }
 
-
-
-
 .catalog {
   width: 760px;
   padding-top: 70px;
@@ -2002,7 +1999,6 @@ a.user-search:active {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   opacity: 0.1;
-
 
   z-index: 1;
 }
@@ -2232,7 +2228,6 @@ a.user-search:active {
 
 
 
-
 .inner-page-footer .container {
   width: 1160px;
   padding: 65px 20px;
@@ -2381,6 +2376,11 @@ a.user-search:active {
   border-color: #f6dada;
 }
 
+/* класс .contact-input-error добавляется элементу .contact-input при возникновении ошибки */
+.contact-input-error {
+  background-color: #f6dada;
+  border-color: #f6dada;
+}
 
 .contact-input:focus::-webkit-input-placeholder {
   color: transparent
