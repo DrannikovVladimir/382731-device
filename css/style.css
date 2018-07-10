@@ -704,7 +704,7 @@ a.user-search:active {
 
 
 .category {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .category-product {
@@ -714,6 +714,7 @@ a.user-search:active {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -740,47 +741,61 @@ a.user-search:active {
   height: 160px;
   margin-bottom: 35px;
   box-sizing: border-box;
+
   text-align: left;
 
   background-color: rgba(240, 197, 46, 0.5);
 }
 
+.category-product-item .wrapper-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .category-product-item:nth-child(1) .wrapper-img {
+  display: block;
   padding-top: 52px;
   padding-left: 31px;
 }
 
 .category-product-item:nth-child(2) .wrapper-img {
+  display: block;
   padding-top: 41px;
   padding-left: 38px;
 }
 
 .category-product-item:nth-child(3) .wrapper-img {
+  display: block;
   padding-top: 38px;
   padding-left: 49px;
 }
 
 .category-product-item:nth-child(4) .wrapper-img {
+  display: block;
   padding-top: 50px;
   padding-left: 28px;
 }
 
 .category-product-item:nth-child(5) .wrapper-img {
+  display: block;
   padding-top: 32px;
   padding-left: 55px;
 }
 
 .category-product-item:nth-child(6) .wrapper-img {
+  display: block;
   padding-top: 49px;
   padding-left: 13px;
 }
 
 .category-product-item {
   width: 160px;
-  margin-right: 40px
+  margin-right: 40px;
+  margin-bottom: 60px;
 }
 
-.category-product-item:last-child {
+.category-product-item:nth-child(6n) {
   margin-right: 0;
 }
 
@@ -794,7 +809,7 @@ a.user-search:active {
 }
 
 
-/* Оформление секции сервисы */
+
 .services {
   margin-bottom: 94px;
   min-height: 388px;
@@ -862,7 +877,7 @@ a.user-search:active {
 }
 
 .services .service-item {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 .services .service-item:last-child {
@@ -925,7 +940,6 @@ a.user-search:active {
 
 
 
-
 .brands {
   margin-bottom: 92px;
 }
@@ -934,16 +948,18 @@ a.user-search:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.brand-item:not(:nth-child(4n)) {
+  margin-right: 40px;
 }
 
 .brand-link {
@@ -952,32 +968,32 @@ a.user-search:active {
   height: 100px;
 }
 
-.brands-item img {
+.brand-item img {
   opacity: 0.2;
 }
 
-.brands-item-dji a:hover,
-.brands-item-spgadget a:hover,
-.brands-item-gopro a:hover,
-.brands-item-vive a:hover {
+.brand-item-dji a:hover,
+.brand-item-spgadget a:hover,
+.brand-item-gopro a:hover,
+.brand-item-vive a:hover {
   opacity: 1;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.brands-item-dji a:hover {
+.brand-item-dji a:hover {
   background-image: url("../img/brands/logo1.png");
 }
 
-.brands-item-spgadget a:hover {
+.brand-item-spgadget a:hover {
   background-image: url("../img/brands/logo2.png");
 }
 
-.brands-item-gopro a:hover {
+.brand-item-gopro a:hover {
   background-image: url("../img/brands/logo3.png");
 }
 
-.brands-item-vive a:hover {
+.brand-item-vive a:hover {
   background-image: url("../img/brands/logo4.png");
 }
 
