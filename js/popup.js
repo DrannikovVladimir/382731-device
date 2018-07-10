@@ -1,4 +1,3 @@
-// Модальное акно с формой
 var writeUs = document.querySelector(".button-contacts");
 var popupContact = document.querySelector(".modal-contact");
 var closeContact = document.querySelector(".button-close-contact");
@@ -36,11 +35,15 @@ writeUs.addEventListener("click", function(evt) {
 closeContact.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupContact.classList.remove("modal-show");
+  popupContact.classList.remove("modal-error");
 });
 
 userForm.addEventListener("submit", function(evt) {
   if (!userName.value || !userEmail.value) {
     evt.preventDefault();
+    popupContact.classList.remove("modal-error");
+    popupContact.offsetWidth = popupContact.offsetWidth;
+    popupContact.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("userName", userName.value);
@@ -54,12 +57,11 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (popupContact.classList.contains("modal-show")) {
       popupContact.classList.remove("modal-show");
+      popupContact.classList.remove("modal-error");
     }
   }
 });
 
-
-// Модальное окно с картой
 var linkMap = document.querySelector(".map-link");
 var popupMap = document.querySelector(".modal-map");
 var closeMap = document.querySelector(".button-close-map");
