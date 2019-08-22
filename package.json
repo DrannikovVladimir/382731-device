@@ -1,0 +1,23 @@
+{
+  "name": "device",
+  "version": "1.0.0",
+  "description": "* Студент: [Владимир Дранников](https://up.htmlacademy.ru/htmlcss/21/user/382731). * Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrannikovVladimir/382731-device.git"
+  },
+  "author": "Vladimir Drannikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrannikovVladimir/382731-device/issues"
+  },
+  "homepage": "https://github.com/DrannikovVladimir/382731-device#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
+}

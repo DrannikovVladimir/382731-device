@@ -673,6 +673,7 @@ a.user-search:active {
 
 .slide-radio {
   padding: 5px;
+  cursor: pointer;
 }
 
 .slide-button {
@@ -885,10 +886,10 @@ a.user-search:active {
   min-width: 160px;
 }
 
-.service-button-current,
-.service-button-current:active,
-.service-button-current:hover,
-.service-button-current:focus {
+.current,
+.current:hover,
+.current:active,
+.current:focus {
   width: 100%;
   padding-left: 20px;
 
@@ -906,7 +907,7 @@ a.user-search:active {
   display: none;
 }
 
-.service-description:nth-child(1) {
+.service-description-current {
   display: block;
 }
 

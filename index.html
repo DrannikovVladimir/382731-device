@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Device</title>
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -219,29 +219,29 @@
           <div class="services-wrapper">
             <ul class="service-list">
               <li class="service-item">
-                <button class="button service-button service-button-current" type="button">Доставка</button>
+                <button class="button service-button" type="button" data-tab="1">Доставка</button>
               </li>
               <li class="service-item">
-                <button class="button service-button" type="button">Гарантия</button>
+                <button class="button service-button current" type="button" data-tab="2">Гарантия</button>
               </li>
               <li class="service-item">
-                <button class="button service-button" type="button">Кредит</button>
+                <button class="button service-button" type="button" data-tab="3">Кредит</button>
               </li>
             </ul>
             <div class="service-inner-wrapper">
-              <div class="service-description">
+              <div class="service-description service-description-current" data-tab="1">
                 <div class="service-description-wrapper">
                   <h3>Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </div>
               </div>
-              <div class="service-description">
+              <div class="service-description" data-tab="2">
                 <div class="service-description-wrapper">
                   <h3>Гарантия</h3>
                   <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
                 </div>
               </div>
-              <div class="service-description">
+              <div class="service-description" data-tab="3">
                 <div class="service-description-wrapper">
                   <h3>Кредит</h3>
                   <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -399,5 +399,6 @@
     </section>
 
     <script src="js/popup.min.js"></script>
+    <script src="js/tab.js"></script>
   </body>
 </html>
