@@ -76,7 +76,7 @@
         <div class="container">
           <h2 class="visually-hidden">Лучшие товары</h2>
           <ul class="slider-products">
-            <li class="slider-item">
+            <li class="slider-item slider-item-current" data-slider="1">
               <div class="wrapper-img">
                 <img src="img/best/monopod.png" width="384" height="486" alt="Палка для селфи">
               </div>
@@ -98,7 +98,7 @@
                 </table>
               </div>
             </li>
-            <li class="slider-item">
+            <li class="slider-item" data-slider="2">
               <div class="wrapper-img">
                 <img src="img/best/fitness-bracelet.png" width="345" height="485" alt="Фитнес-браслеты">
               </div>
@@ -116,7 +116,7 @@
                 </table>
               </div>
             </li>
-            <li class="slider-item">
+            <li class="slider-item" data-slider="3">
               <div class="wrapper-img">
                 <img src="img/best/quadrupter.png" width="526" height="334" alt="Квадракортер">
               </div>
@@ -139,17 +139,17 @@
           </ul>
           <ul class="slides-switches">
             <li class="slide-radio slide-radio-active">
-              <button class="slide-button slide-button-current" type="button">
+              <button class="slide-button slide-button-current" type="button" data-slider="1">
                 <span class="visually-hidden">Первый слайд</span>
               </button>
             </li>
             <li class="slide-radio">
-              <button class="slide-button" type="button">
+              <button class="slide-button" type="button" data-slider="2">
                 <span class="visually-hidden">Второй слайд</span>
               </button>
             </li>
             <li class="slide-radio">
-              <button class="slide-button" type="button">
+              <button class="slide-button" type="button" data-slider="3">
                 <span class="visually-hidden">Третий слайд</span>
               </button>
             </li>
@@ -400,5 +400,6 @@
 
     <script src="js/popup.min.js"></script>
     <script src="js/tab.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

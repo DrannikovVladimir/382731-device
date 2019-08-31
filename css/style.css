@@ -507,9 +507,7 @@ a.user-search:active {
   display: none;
 }
 
-.slider-item:nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.slider-item-current {
   display: flex;
 }
 
@@ -669,6 +667,8 @@ a.user-search:active {
   padding: 0;
 
   list-style: none;
+
+  z-index: 100;
 }
 
 .slide-radio {
